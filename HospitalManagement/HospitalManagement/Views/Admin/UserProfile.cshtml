@@ -1,0 +1,135 @@
+﻿@{
+    ViewBag.Title = "User Profiles";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/UserProfile/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/UserProfile/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/UserProfile/CRUD.js"></script>
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>USER PROFILE MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="userprofile_jqxButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="userprofile_jqxgrid"></div>
+        </div>
+    </div>
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td width="20%">
+                    <div style="position: relative">
+                        <img id="userprofile_profileImgDtlGrid" src="~/Images/doctorphoto2.png" width="100px" height="100px" style="margin-left: 2px;" />
+                        <input style="display: none; position: absolute; top: 75px; left: 20px" type="button" value="Upload" id="userprofile_jqxButtonUpload" />
+                    </div>
+                </td>
+                <td align="left" id="userprofile_sideTableID" class="DetailGridFieldCaption">0090019                        
+                </td>
+            </tr>
+        </table>
+        <div style="height: 442px; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">User Name
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxUserNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Password
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxPasswordTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">User Profile Id
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Role
+                    </td>
+                    <td>
+                        <div id="userprofile_jqxRoleDdn"></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Last Name
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxLastNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">First Name
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxFirstNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Title
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxTitleTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mobile Number
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxMobPhoneTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Work Phone
+                    </td>
+                    <td>
+                        <input type="text" id="userprofile_jqxWrkPhoneTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Gender
+                    </td>
+                    <td>
+                        <div id='userprofile_jqxGenderDdn'></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="userprofile_jqxButtonDelete" onclick="deleteButtonClick()" />
+                    <input type="button" value="Save" id="userprofile_jqxButtonSave" onclick="saveButtonClick()" />
+                    <input type="button" value="Cancel" id="userprofile_jqxButtonCancel" onclick="CancelRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,150 @@
+﻿@{
+    ViewBag.Title = "Projects";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Project/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Project/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Project/CRUD.js"></script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>PROJECT MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="project_jqxButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1" style="border: none;">
+    <div>
+        <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%; height: 100%">
+            <div id="project_jqxgrid"></div>
+        </div>
+    </div>
+    <div>
+        <div style="height: 94%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Project Id
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Project Name
+                    </td>
+                    <td>
+                        <div id='project_jqxProjNameDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Project Dollar Value 
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxProjDolValTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Project Description
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxProjDescTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Project Sponsor
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxProjSponTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Regional Admin Id
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxRegAdmIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Regional Admin 
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxRegAdmTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mobile Phone
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxMobPhoneTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Gender
+                    </td>
+                    <td>
+                        <div id='project_jqxGenderDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Work Phone
+                    </td>
+                    <td>
+                        <input type="text" id="project_jqxWrkPhoneTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Center
+                    </td>
+                    <td>
+                        <div id='project_jqxCenterDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Sites
+                    </td>
+                    <td>
+                        <div id='project_jqxSiteDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Provider Team Name
+                    </td>
+                    <td>
+                        <div id='project_jqxProvTeamNameDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Panel Group
+                    </td>
+                    <td>
+                        <div id='project_jqxPanelGrpDdn'></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="project_jqxButtonDelete" onclick="deleteButtonClick()" />
+                    <input type="button" value="Save" id="project_jqxButtonSave" onclick="saveButtonClick()" />
+                    <input type="button" value="Cancel" id="project_jqxButtonCancel" onclick="CancelRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

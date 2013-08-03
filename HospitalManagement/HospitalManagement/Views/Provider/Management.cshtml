@@ -1,0 +1,272 @@
+﻿@{
+    ViewBag.Title = "Provider Management";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Provider/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Provider/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Provider/CRUD.js"></script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>PROVIDER MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="jqxButtonAdd" onclick="AddRecord();" />
+                <img id="imgSlider" src="~/Images/ArrowRight.png" style="vertical-align: middle;" onclick="Slide();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<table style="border: 0px solid #000; width: 100%">
+    <tr>
+        <td width="75%">
+            <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+                <div id="jqxgrid"></div>
+            </div>
+        </td>
+        <td id="dtlsGrid" style="vertical-align: top; width: 25%">
+            <table style="width: 100%;">
+                <tr>
+                    <td width="20%">
+                        <div style="position: relative">
+                            <img id="profileImgDtlGrid" src="~/Images/doctorphoto2.png" width="100px" height="100px" style="margin-left: 2px;" />
+                            <input style="display: none; position: absolute; top: 75px; left: 20px" type="button" value="Upload" id="jqxButtonUpload" />
+                        </div>
+                    </td>
+                    <td align="left" id="sideTableID" class="DetailGridFieldCaption">0090019                        
+                    </td>
+                </tr>
+            </table>
+            <div style="height: 442px; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+                <table width="100%">
+                    <tr style="height: 30px;">
+                        <td class="DetailGridFieldCaption">User Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxUserNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Provider ID
+                        </td>
+                        <td>
+                            <input type="text" id="jqxProvIdTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Password
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPasswordTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Last Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxLastNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">First Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxFirstNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Provider Type
+                        </td>
+                        <td>
+                            <div id='jqxProviderTypeDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mobile Phone
+                        </td>
+                        <td>
+                            <input type="text" id="jqxMobileNumberTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Work Phone
+                        </td>
+                        <td>
+                            <input type="text" id="jqxWorkPhoneTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Gender
+                        </td>
+                        <td>
+                            <div id='jqxGenderDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Center
+                        </td>
+                        <td>
+                            <div id='jqxCenterDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Center Admin
+                        </td>
+                        <td>
+                            <input type="text" id="jqxCenterAdminTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Site
+                        </td>
+                        <td>
+                            <div id='jqxSiteDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Services Available
+                        </td>
+                        <td>
+                            <div id='jqxServicesAvailDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Permanent Province
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPermanentProvinceTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Permanent City
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPermanentCityTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Permanent District
+                        </td>
+                        <td>
+                            <div id='jqxPermanentDistrictDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Permanent Street Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPermanentStreetNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Permanent Street Number
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPermanentStreetNumberTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Permanent Postal Code
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPermanentPostalCodeTxt" />
+                        </td>
+                    </tr>
+
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mailing Province
+                        </td>
+                        <td>
+                            <input type="text" id="jqxMailingProvinceTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mailing City
+                        </td>
+                        <td>
+                            <input type="text" id="jqxMailingCityTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mailing District
+                        </td>
+                        <td>
+                            <div id='jqxMailingDistrictDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mailing Street Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxMailingStreetNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mailing Street Number
+                        </td>
+                        <td>
+                            <input type="text" id="jqxMailingStreetNumberTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mailing Postal Code
+                        </td>
+                        <td>
+                            <input type="text" id="jqxMailingPostalCodeTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Marital Status
+                        </td>
+                        <td>
+                            <div id='jqxMaritalStatusDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Title
+                        </td>
+                        <td>
+                            <div id='jqxTitleDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Doctor Referral
+                        </td>
+                        <td>
+                            <div id='jqxDoctorReferralDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Specializes in diseases
+                        </td>
+                        <td>
+                            <div id='jqxSpecializeDdn'></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td align="right">
+                        <input type="button" value="Delete" id="jqxButtonDelete" onclick="deleteButtonClick()" />
+                        <input type="button" value="Save" id="jqxButtonSave" onclick="saveButtonClick()" />
+                        <input type="button" value="Cancel" id="jqxButtonCancel" onclick="CancelRowEdit();" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+

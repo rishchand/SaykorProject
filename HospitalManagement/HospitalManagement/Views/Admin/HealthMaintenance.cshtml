@@ -1,0 +1,311 @@
+﻿@{
+    ViewBag.Title = "Patient Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script src="~/Scripts/CPC/admin/HealthMaintenance/Temp.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/HealthMaintenance/INIT.js"></script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>HEALTH MAINTENANCE</td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<table style="border: 0px solid #000; width: 100%">
+    <tr>
+        <td width="75%">
+            <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+                <div id="mainSplitter1">
+                    <div>
+                        <div style="border: none;" id="patientExpander">
+                            <div class="jqx-hideborder">
+                                PATIENTS
+                            </div>
+                            <div class="jqx-hideborder jqx-hidescrollbars">
+                                <div id="hm_patient_jqxgrid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="mainSplitter2">
+                            <div>
+                                <div id="goalSplitter">
+                                    <div id="goalUpperPanel">
+                                        <div class="jqx-hideborder" id="goalListExpander">
+                                            <div class="jqx-hideborder" id="goalHeader">
+                                                GOAL LIST
+                                            </div>
+                                            <div class="jqx-hideborder jqx-hidescrollbars">
+                                                <div id='goals_jqxTabs' style="height: 100%">
+                                                    <ul>
+                                                        <li style="margin-left: 30px;">Active</li>
+                                                        <li>Closed</li>
+                                                    </ul>
+                                                    <div>
+                                                        <div id="hm_goalActive_jqxgrid"></div>
+                                                    </div>
+                                                    <div>
+                                                        <div id="hm_goalClosed_jqxgrid"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="goalContentArea">
+                                        <div class="jqx-hideborder" id="goalDetailExpander">
+                                            <div class="jqx-hideborder" id="goalDetailHeader">
+                                                GOAL DETAILS
+                                            </div>
+                                            <div class="jqx-hideborder jqx-hidescrollbars">
+                                                <table style="margin: 10px; width: 97%">
+                                                    <tr>
+                                                        <td>GOAL ID
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_gd_goalIdTxt" />
+                                                        </td>
+                                                        <td>GOAL TYPE
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_gd_goalTypeDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DESCRIPTION
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_gd_DescTxt" />
+                                                        </td>
+                                                        <td>STATUS
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_gd_goalStatusDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>START DATE
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_gd_StrtDtCal"></div>
+                                                        </td>
+                                                        <td>END DATE
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_gd_EndDtCal"></div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="jqx-hideborder" id="goalCompExpander">
+                                            <div class="jqx-hideborder" id="goalCompHeader">
+                                                GOAL COMPONENTS
+                                            </div>
+                                            <div class="jqx-hideborder jqx-hidescrollbars">
+                                                <table style="margin: 10px;" border="0">
+                                                    <tr>
+                                                        <td>CONTENT
+                                                        </td>
+                                                        <td>
+                                                            <div id="hm_jqx_gc_goalCompDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>FREQUENCY
+                                                        </td>
+                                                        <td>
+                                                            <div id="hm_jqx_gc_goalFreqDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>CONFIDENCE
+                                                        </td>
+                                                        <td>
+                                                            <div id="hm_jqx_gc_goalConfDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TARGET READING
+                                                        </td>
+                                                        <td>
+                                                            <input id="hm_jqx_gc_goalTgtReadTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LOCATION CONDUCTE
+                                                        </td>
+                                                        <td>
+                                                            <input id="hm_jqx_gc_goalLocConTxt" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table style="width: 100%;">
+                                                    <tr>
+                                                        <td align="right">
+                                                            <input type="button" value="Add New" id="goal_jqxButtonAdd" onclick="AddButtonClick()" />
+                                                            <input type="button" value="Save" id="goal_jqxButtonSave" onclick="saveButtonClick()" />
+                                                            <input type="button" value="Cancel" id="goal_jqxButtonCancel" onclick="CancelRowEdit();" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="assessmentSplitter">
+                                    <div id="assessmentUpperPanel">
+                                        <div class="jqx-hideborder" id="assessmentListExpander">
+                                            <div class="jqx-hideborder" id="assessmentListHeader">
+                                                GOAL HISTORY
+                                            </div>
+                                            <div class="jqx-hideborder jqx-hidescrollbars">
+                                                <div id="hm_ass_jqxgrid"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="assessmentContentArea">
+                                        <div class="jqx-hideborder" id="assessmentContentExpander">
+                                            <div class="jqx-hideborder" id="assessmentItemHeader">
+                                                GOAL ASSESSMENT
+                                            </div>
+                                            <div class="jqx-hideborder">
+                                                <table style="margin: 10px; width: 55%;">
+                                                    <tr>
+                                                        <td>PATIENT ID
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_patientIdTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ASSESSMENT DATE
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_ass_assDtCal"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LAST NAME
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_lastNameTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>FIRST NAME
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_firstNameTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GENDER
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_ass_genderDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GOAL ID
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_goalIdTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GOAL TYPE
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_goalTypeDdn" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DESCRIPTION
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_goalDescTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>START DATE
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_ass_startDtCal"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>END DATE
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_ass_endDtCal"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>STATUS
+                                                        </td>
+                                                        <td>
+                                                            <div type="text" id="hm_jqx_ass_statusDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>TARGET READING
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_tgtReadTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>ACTUAL READING
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_actReadTxt" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>GRADE
+                                                        </td>
+                                                        <td>
+                                                            <div id="hm_jqx_ass_gradeDdn"></div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>COMMENTS
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" id="hm_jqx_ass_comTxt" />
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <table style="width: 100%;">
+                                            <tr>
+                                                <td align="right">
+                                                    <input type="button" value="Add New" id="ass_jqxButtonAdd" onclick="AddButtonClick()" />
+                                                    <input type="button" value="Save" id="ass_jqxButtonSave" onclick="saveButtonClick()" />
+                                                    <input type="button" value="Cancel" id="ass_jqxButtonCancel" onclick="CancelRowEdit();" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+

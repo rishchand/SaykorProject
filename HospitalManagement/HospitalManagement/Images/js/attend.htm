@@ -1,0 +1,566 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <title id='Description'>This example illustrates the Grid filtering feature. Enter some data into the Filter Row.</title>
+
+<style>
+   .button-item
+      {
+         background-color: #0059AD;
+         border-color: #0059AD;
+         color:aliceblue;
+     }
+
+    .edit-item
+      {
+         background-color: black;
+         border: 1px solid #555;
+         color:aliceblue;
+         width: 130px;
+     }
+    .edit-label
+    {
+         color:yellow;
+    }
+</style>
+
+    <script type="text/javascript">
+        var add = false;
+        var selectRow = 0;
+
+        document.body.style.cursor = 'wait';
+        $(document).ready(function () {
+            //var theme = getTheme();
+            var theme = "black";
+
+            prefix = 'Values';
+            fname = 'queryAll';
+            var dataParam = {};
+            dataParam.displayName = "studentcenter.attend";
+            $.epic.query(prefix, fname, dataParam, function (data2) {
+
+                if (data2.response.success) {
+                    if (data2.response.result == "") {
+                        alert("Result From Response is empty");
+                        return;
+                    }
+                }
+                else {
+                    alert("queryAll(studentcenter.attend) failed");
+                }
+                var resp = JSON.parse(data2.response.result);
+
+                var data = getData(resp);
+
+                var imagerenderer = function (row, datafield, value) {
+                    return '<img style="margin-left: 5px;" height="60" width="50" src="images/' + value + '"/>';
+                }
+
+
+                var source =
+                {
+                    localdata: data,
+                    datafields:
+                    [
+                       { name: 'Image', type: 'Image' },
+                       { name: 'indDeleted', type: 'bool' },
+                       { name: 'STUID', type: 'string' },
+                       { name: 'date', type: 'date'},
+                       { name: 'SECTNO', type: 'string' },
+                       { name: 'SECNUM', type: 'string' },
+                       { name: 'TRMCODE', type: 'string' },
+                       { name: 'HOURS', type: 'number' },
+                       { name: 'SCHHOURS', type: 'number' },
+                       { name: 'HTYPE', type: 'string' },
+                       { name: 'FLAG', type: 'string' },
+                       { name: 'ID', type: 'string' },
+                   ],
+                   datatype: "array",
+                   addrow: function (rowid, rowdata, position, commit) {
+
+                    // synchronize with the server - send insert command
+                    // call commit with parameter true if the synchronization with the server is successful
+                    //and with parameter false if the synchronization failed.
+                      commit(true);
+                   },
+                   updaterow: function (rowid, newdata, commit) {
+
+                    // synchronize with the server - send update command
+                    // call commit with parameter true if the synchronization with the server is successful
+                    // and with parameter false if the synchronization failed.
+                      commit(true);
+                  }
+               };
+
+               var dataAdapter = new $.jqx.dataAdapter(source);
+
+               var filters = [];
+               var target = data[0]["STUID"];
+               filters[0] = target;
+               var j = 0;
+               for (var i = 1; i < data.length; i++) {
+                  if (data[i]["STUID"] != target) {
+                    filters[++j] = data[i]["STUID"];
+                    target = data[i]["STUID"];
+                  }
+               }
+
+               $("#jqxgrid").jqxGrid(
+               {
+                  width: "100%",
+                  height: 480,
+                  source: dataAdapter,
+                  showfilterrow: true,
+                  filterable: true,
+                  sortable: true,
+                  pageable: true,
+                  pagesizeoptions: ['15', '50', '150'],
+                  pagesize: 15,
+                  theme: theme,
+                  selectionmode: 'multiplecellsextended',
+                  columns: [
+                     { text: 'Photo', datafield: 'Image', width: 60, cellsrenderer: imagerenderer },
+                     { text: 'indDeleted', datafield: 'indDeleted', columntype: 'checkbox', filtertype: 'bool', width: 80 },
+                     { text: 'STUID', filtertype: 'list', filteritems: filters, datafield: 'STUID', width: 130 },
+                     { text: 'Date', datafield: 'date', filtertype: 'date', width: 100,  cellsformat: 'd' },
+                     { text: 'SECTNO', datafield: 'SECTNO', width: 80 },
+                     { text: 'SECNUM', datafield: 'SECNUM', width: 80 },
+                     { text: 'TRMCODE', datafield: 'TRMCODE', width: 80 },
+                     { text: 'HOURS', datafield: 'HOURS', width: 80, filtertype: 'number' },
+                     { text: 'SCHHOURS', datafield: 'SCHHOURS', width: 80, filtertype: 'number' },
+                     { text: 'HTYPE', datafield: 'HTYPE', width: 80 },
+                     { text: 'FLAG', datafield: 'FLAG', width: 80 },
+                     { text: 'ID', datafield: 'ID', width: 100 }
+                  ]
+               });
+               $('#jqxgrid').bind('rowselect', function (event) {
+                  var args = event.args;
+                  var row = args.rowindex;
+
+                  var rowdata = $('#jqxgrid').jqxGrid('getrowdata', row);
+                
+                  var STUID = rowdata.STUID;
+                  var image = rowdata.Image;
+                  var indDeleted = rowdata.indDeleted;
+                  var imgurl = 'images/' + image;
+                  document.getElementById("Photo").src = imgurl;
+                  document.getElementById("STUID").innerHTML = STUID;
+                  document.getElementById("indDeleted").innerHTML = indDeleted;
+
+                  selectRow = row;
+                  if (add == true) {
+                    addTable();
+                  }
+                  else if (document.getElementById("editFrame").style.visibility == "visible") {
+                    editTable();
+                  }
+               });
+
+               $("#jqxgrid").jqxGrid('selectionmode', 'singlerow');
+            
+               //initialize the 1st row            
+               $('#jqxgrid').jqxGrid({ selectedrowindex: 0 });         
+               var STUID = data[0].STUID;
+               var image = data[0].Image;
+               var indDeleted = data[0].indDeleted;
+               var imgurl = 'images/' + image;
+               document.getElementById("Photo").src = imgurl;
+               document.getElementById("STUID").innerHTML = STUID;
+               document.getElementById("indDeleted").innerHTML = indDeleted;
+            
+               document.getElementById("imageFrame").style.visibility = "visible";
+               document.getElementById("infoFrame").style.visibility = "visible";
+               document.getElementById("reset").style.visibility = "visible";
+
+               $('#jqxTabs').jqxTabs({ width: 240, height: 350, theme: theme });
+               $("#edit_date").jqxDateTimeInput({ width: '130px', height: '15px', theme: 'blackInput' });
+
+               document.body.style.cursor = 'default';
+          }); //epic query
+
+        });
+
+        function getData(data) {
+            var griddata = new Array();
+            var image =
+               [
+                   "131910.png", "131910.png", "131910.png", "131910.png", "131910.png", "109995.png", "114871.png"
+               ];
+            
+
+            if (data == null){
+                return griddata;
+            }
+        
+            for (var i = 0; i < data.length; i++) {                
+                 var row = {};
+                               
+                 if (i < 7) {
+                     row["Image"] = image[i];
+                 }
+                 else {
+                     row["Image"] = image[6];
+                 }
+                 var trueOrfalse = false;
+                    
+                 if (data[i]["indDeleted"] == "TRUE")
+                      trueOrfalse = true;
+                 else
+                      trueOrfalse = false;
+
+                 row["indDeleted"] = trueOrfalse;
+                 row["STUID"] = data[i]["STUID"];
+                    var date = new Date();
+                    date.setFullYear(2012, 00, 00);
+                    date.setHours(0, 0, 0, 0);
+                 row["date"] = data[i]["DATE"];
+                 row["SECTNO"] = data[i]["SECTNO"];
+                 row["SECNUM"] = data[i]["SECNUM"];
+                 row["TRMCODE"] = data[i]["TRMCODE"];
+                 row["HOURS"] = Number(data[i]["HOURS"]);
+                 row["SCHHOURS"] = Number(data[i]["SCHHOURS"]);
+                 row["HTYPE"] = data[i]["HTYPE"];
+                 row["FLAG"] = data[i]["FLAG"];
+                 row["ID"] = data[i]["ID"];
+
+                 griddata[i] = row;                   
+            }
+          
+            return griddata;          
+        }
+
+        function editTable() {
+            document.getElementById("editFrame").style.visibility = "visible";
+            document.getElementById("save").style.visibility = "visible";
+            document.getElementById("cancel").style.visibility = "visible";
+            document.getElementById("delete").style.visibility = "visible";
+
+            //var rowindex = $('#jqxgrid').jqxGrid('getselectedrowindex');
+            //alert(rowindex);
+            var rowdata = $('#jqxgrid').jqxGrid('getrowdata', selectRow);
+
+            var SCHHOURS = rowdata.SCHHOURS;           
+            var STUID = rowdata.STUID;
+            var indDeleted = rowdata.indDeleted;
+            var date = rowdata.date;
+            var SECTNO = rowdata.SECTNO;
+            var SECNUM = rowdata.SECNUM;
+            var TRMCODE = rowdata.TRMCODE;
+            var HOURS = rowdata.HOURS;
+            var SCHHOURS = rowdata.SCHHOURS;
+            document.getElementById("edit_indDeleted").value = indDeleted;
+            document.getElementById("edit_STUID").value = STUID;
+            $('#edit_date ').jqxDateTimeInput('setDate', date);
+            document.getElementById("edit_SECTNO").value = SECTNO;
+            document.getElementById("edit_SECNUM").value = SECNUM;
+            document.getElementById("edit_TRMCODE").value = TRMCODE;
+            document.getElementById("edit_HOURS").value = HOURS;
+            document.getElementById("edit_SCHHOURS").value = SCHHOURS;
+            document.getElementById("edit_HTYPE").value = rowdata.HTYPE;
+            document.getElementById("edit_FLAG").value = rowdata.FLAG;
+            document.getElementById("edit_ID").value = rowdata.ID;
+
+            add = false;
+        }
+
+        function addTable() {
+            document.getElementById("editFrame").style.visibility = "visible";
+            document.getElementById("save").style.visibility = "visible";
+            document.getElementById("cancel").style.visibility = "visible";
+            document.getElementById("delete").style.visibility = "visible";
+
+            document.getElementById("edit_indDeleted").value = "";
+            document.getElementById("edit_STUID").value = "";
+            $('#edit_date ').jqxDateTimeInput('setDate', new Date());
+            document.getElementById("edit_SECTNO").value = "";
+            document.getElementById("edit_SECNUM").value = "";
+            document.getElementById("edit_TRMCODE").value = "";
+            document.getElementById("edit_HOURS").value = "";
+            document.getElementById("edit_SCHHOURS").value = "";
+            document.getElementById("edit_HTYPE").value = "";
+            document.getElementById("edit_FLAG").value = "";
+            document.getElementById("edit_ID").value = "";
+
+            add = true;
+        }
+
+        function cancelEdit() {
+           
+            document.getElementById("editFrame").style.visibility = "hidden";
+            document.getElementById("save").style.visibility = "hidden";
+            document.getElementById("cancel").style.visibility = "hidden";
+            document.getElementById("delete").style.visibility = "hidden";
+        }
+
+        function saveEdit() {
+            if (add == false) {
+                deleteEdit();
+            }
+           
+            var newdata = {};
+            newdata["indDeleted"] = document.getElementById("edit_indDeleted").value;
+            newdata["STUID"] =  document.getElementById("edit_STUID").value;
+            var date = new Date();
+            date.setFullYear(2012, 00, 00);
+            date.setHours(0, 0, 0, 0);
+            newdata["date"] = $('#edit_date').jqxDateTimeInput('getDate');
+         //   alert(newdata["date"].toString());
+          //  return;
+            newdata["SECTNO"] = document.getElementById("edit_SECTNO").value;
+            newdata["SECNUM"] = document.getElementById("edit_SECNUM").value;
+            newdata["TRMCODE"] = document.getElementById("edit_TRMCODE").value;
+            newdata["HOURS"] = document.getElementById("edit_HOURS").value;
+            newdata["SCHHOURS"] = document.getElementById("edit_SCHHOURS").value;
+            newdata["HTYPE"] = document.getElementById("edit_HTYPE").value;
+            newdata["FLAG"] = document.getElementById("edit_FLAG").value;
+            newdata["ID"] = document.getElementById("edit_ID").value;
+
+            if (add == true) {
+                var commit = $("#jqxgrid").jqxGrid('addrow', null, newdata);
+                var datainformations = $("#jqxgrid").jqxGrid("getdatainformation");
+                var rowscounts = datainformations.rowscount; 
+                selectRow = rowscounts;
+            }
+            else {
+               
+                var value = $('#jqxgrid').jqxGrid('updaterow', selectRow, newdata);
+            }
+            
+            prefix = 'Values';
+            fname = 'InsertData';
+            var displayName = "studentcenter.attend@" + newdata["STUID"] + "_" + newdata["SECTNO"] + "_" + newdata["SECNUM"]
+                              + "_" + newdata["TRMCODE"] + "_" + newdata["ID"];
+
+            var datacontent = {
+                "indDeleted": newdata["indDeleted"],
+                "STUID": newdata["STUID"],
+                "DATE": newdata["date"].toString(),
+                "SECTNO": newdata["SECTNO"],
+                "SECNUM": newdata["SECNUM"],
+                "TRMCODE": newdata["TRMCODE"],
+                "HOURS": newdata["HOURS"],
+                "SCHHOURS": newdata["SCHHOURS"],
+                "HTYPE": newdata["HTYPE"],
+                "FLAG": newdata["FLAG"],
+                "ID": newdata["ID"]
+            };
+           
+            $.epic.insert(prefix, fname, displayName, datacontent, function (data2) {
+
+                if (data2.response.success) {
+                    
+                }
+                else {
+                    alert("insert(studentcenter.attend) failed");
+                }
+            });
+
+            if (add == true) {
+                var columns = [
+                 { text: 'Photo', datafield: 'Image', width: 60, cellsrenderer: imagerenderer },
+                 { text: 'indDeleted', datafield: 'indDeleted', columntype: 'checkbox', filtertype: 'bool', width: 80 },
+                 { text: 'STUID', filtertype: 'list', filteritems: ['8888888'], datafield: 'STUID', width: 130 },
+                 { text: 'Date', datafield: 'date', filtertype: 'date', width: 100, cellsformat: 'd' },
+                 { text: 'SECTNO', datafield: 'SECTNO', width: 80 },
+                 { text: 'SECNUM', datafield: 'SECNUM', width: 80 },
+                 { text: 'TRMCODE', datafield: 'TRMCODE', width: 80 },
+                 { text: 'HOURS', datafield: 'HOURS', width: 80, filtertype: 'number' },
+                 { text: 'SCHHOURS', datafield: 'SCHHOURS', width: 80, filtertype: 'number' },
+                 { text: 'HTYPE', datafield: 'HTYPE', width: 80 },
+                 { text: 'FLAG', datafield: 'FLAG', width: 80 },
+                 { text: 'ID', datafield: 'ID', width: 100 }
+                ];
+                //$("#jqxgrid").jqxGrid('_columns', null);
+                $("#jqxgrid").jqxGrid('columns', columns);
+                $("#jqxgrid").jqxGrid('updatebounddata');
+            }
+        }
+
+        function deleteEdit() {
+        
+            var rowdata = $('#jqxgrid').jqxGrid('getrowdata', selectRow);
+
+            var prefix = 'Values';
+            var fname = 'DeleteData';
+            var displayName = "studentcenter.attend@" + rowdata["STUID"] + "_" + rowdata["SECTNO"] + "_" + rowdata["SECNUM"]
+                              + "_" + rowdata["TRMCODE"] + "_" + rowdata["ID"];
+
+            $.epic.insert(prefix, fname, displayName,  function (data2) {
+
+                if (data2.response.success) {
+
+                }
+                else {
+                    alert("insert(studentcenter.attend) failed");
+                }
+            });
+        }
+
+        function resetGrid() {
+            $("#jqxgrid").jqxGrid('removesort');
+            $("#jqxgrid").jqxGrid('clearfilters');
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 100%; height: 100%; margin-top: 0px; border-width: 1px; border:solid ">
+        <div class="panel_color" style="width: 100%; height: 30px; margin-bottom: 0px; margin-top: 0px; ">
+            
+            <b><label style="float: left; margin-left: 20px; margin-top: 5px;color:aliceblue; font-size: 17px;">Attend</label></b>            
+            <button class="button-item" style="float: right; margin-right: 10px; margin-bottom: 0px;" onclick="editTable()">Edit</button>
+            <button class="button-item" style="float: right; margin-right: 10px;margin-bottom: 0px;" onclick="addTable()">Add</button>           
+        </div>
+        <div style="margin-top:0px;">
+        <table style="width: 100%; height:100%;margin-top:0px;">
+             <tr>
+                 <td style="width: 85%;height: 100%; margin-top:0px;">
+                      <div id="jqxgrid">
+                      </div>
+                 </td>
+                 <td valign="top" style="height: 100%; width: 100%; margin: 0px; ">
+                    <div>
+                              <table id="imageFrame" cellspacing="15" cellpadding="0" style="height: 100%;  visibility:hidden">
+                                      <tr>
+                                         <td style=" width: 100px" >
+                                               <img alt='' style='height: 70px' id="Photo" src="images/131910.png" />                               
+                                         </td>
+                                         <td   style="">
+                                             <label id="STUID" style="color: aliceblue; " ></label>
+                                         </td>
+                                      </tr>
+                                      
+                              </table>
+                         </div>
+                         <div id="infoFrame" style="visibility:hidden ">
+                              <table cellspacing="10" cellpadding="0" style="">                                 
+                                  <tr>
+                                         <td id="" valign="bottom" style="color: aliceblue;  ">indDeleted:</td>
+                                         <td id="indDeleted" style="color: aliceblue; "></td>
+                                  </tr>
+                                      
+                                  <tr>
+                                         <td valign="bottom" style="color: aliceblue; "></td>
+                                         <td id="Td10" style="color: aliceblue; "></td>
+                                  </tr>
+                              </table>
+                         </div>
+                         
+                         <div id="editFrame" style="width: 100%; visibility:hidden; margin-left: 9px; margin-top: -55px; margin-right: 20px">
+                             <div id='jqxTabs' style="">
+                               <ul>
+                                  <li>Attend</li>                                        
+                                </ul>                             
+                                 <div>
+                                 <table cellspacing="0" cellpadding="0" id="editTable" style="color: #D67200; width: 100%">                                  
+                                        <tr   style="visibility:inherit">
+                                            <td class="edit-label" style="">
+                                               indDeleted:                               
+                                            </td>
+                                            <td >
+                                                <input type='textbox' id="edit_indDeleted" class="edit-item" style=""/>
+                                            </td>
+                                       </tr>
+                                       <tr   style="visibility:inherit">
+                                            <td class="edit-label" style="">
+                                               STUID:                               
+                                            </td>
+                                            <td >
+                                                <input type='textbox' id="edit_STUID" class="edit-item" style=""/>
+                                            </td>
+                                       </tr>
+                                       <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label" style="">
+                                               DATE:                               
+                                           </td>
+                                           <td id="Td1">
+                                             <!--  <input type='textbox' id="edit_date" class="edit-item" style=""/>-->
+                                               <div id="edit_date"></div>
+                                           </td>
+                                       </tr>
+                                       <tr border="1"  style="visibility:inherit">
+                                          <td class="edit-label"  style="">
+                                                SECTNO:                               
+                                          </td>
+                                          <td id="Td3">
+                                              <input type='textbox' id="edit_SECTNO" class="edit-item" style=""/>
+                                          </td>
+                                       </tr>
+                                       <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label" style=" ">
+                                                SECNUM:                               
+                                           </td>
+                                           <td id="Td4">
+                                              <input type='textbox' id="edit_SECNUM" class="edit-item" style=""/>
+                                           </td>
+                                       </tr>
+                                       <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label"  style="">
+                                                TRMCODE:                               
+                                           </td>
+                                           <td id="Td5">
+                                               <input type='textbox' id="edit_TRMCODE" class="edit-item" style=""/>
+                                           </td>
+                                       </tr>
+                                       <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label"  style="">
+                                               HOURS:                               
+                                           </td>
+                                           <td id="Td6">
+                                                <input type='textbox' id="edit_HOURS" class="edit-item"  style=""/>
+                                           </td>
+                                       </tr>
+                                       <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label"  style="">
+                                               SCHHOURS:                               
+                                           </td>
+                                           <td id="Td7">
+                                               <input class="edit-item" type='textbox' id="edit_SCHHOURS" style=""/>
+                                           </td>
+                                      </tr>
+                                      <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label"  style="">
+                                               HTYPE:                               
+                                           </td>
+                                           <td id="Td2">
+                                               <input class="edit-item" type='textbox' id="edit_HTYPE" style=""/>
+                                           </td>
+                                      </tr>
+                                     <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label"  style="">
+                                               FLAG:                               
+                                           </td>
+                                           <td id="Td11">
+                                               <input class="edit-item" type='textbox' id="edit_FLAG" style=""/>
+                                           </td>
+                                      </tr>
+                                     <tr border="1"  style="visibility:inherit">
+                                           <td class="edit-label"  style="">
+                                               ID:                               
+                                           </td>
+                                           <td id="Td12">
+                                               <input class="edit-item" type='textbox' id="edit_ID" style=""/>
+                                           </td>
+                                      </tr>
+                                 </table>
+                                     </div>
+                       
+                                 </div>
+                             </div>
+                         
+                         <div style="margin-bottom: 0px;">
+                             <button class="button-item" id="cancel" style="float:right;  visibility:hidden;  " onclick="cancelEdit()">Cancel</button>
+                             <button class="button-item" id="save" style="float:right; visibility:hidden; " onclick="saveEdit()">Save</button>
+                             <button class="button-item" id="delete" style="float:right; visibility:hidden; " onclick="deleteEdit()">Delete</button>
+                         </div>
+                              
+                 </td>
+             </tr>
+        </table>
+        </div>
+        <div>
+            <button id="reset" class="button-item" style="float: left; visibility:hidden" onclick="resetGrid()">Reset Data</button>
+        </div>
+    </div>
+</body>
+</html>

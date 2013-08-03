@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    @Styles.Render("~/Content/css")
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/Scripts/jqwidgets/styles/jqx.base.css" rel="stylesheet" />
+    <link href="/Scripts/jqwidgets/styles/qtxTheme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqwidget")
+</head>
+<body style="background-color: #bfbfbf">
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <div class="site-title" >
+                    <table border="0" width="100%">
+                        <tr>
+                            <td >
+                                <img src="~/Images/DoctorPhoto.jpg" width="100px" height="100px" />
+                            </td>
+                            <td width="20%">
+                                <span class="header-doctor">DR.</span>
+                                <span class="header-doctor-name">DAVID WANG</span>
+                            </td>
+                            <td width="100%">
+                                <div id='jqxWidget1' style="float: right;">
+                                    <div id='jqxMenu' style='margin-left: 5px; border: 0px solid #000;'>
+                                        <ul>
+                                            <li>
+                                                <a href="#">DASHBOARD</a>
+                                           </li>
+                                            <li>
+                                                <a href="#">PROVIDERS</a>
+                                                <ul style='width: 170px;'>
+                                                    <li><a href="#" onclick="openWindow('Provider/Management')">Provider Management</a></li>
+                                                    <li><a href="#">Provider Workgroup</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">PATIENTS</a>
+                                                <ul style='width: 220px;'>
+                                                    <li><a href="#">Patient Management</a></li>
+                                                    <li><a href="#">Patient Group</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#" onclick="openWindow('Provider/Sites')">SITES</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">CENTERS</a>
+                                            </li>
+                                            <li><a href="#">DISEASE</a></li>
+                                            <li><a href="#">ACTIVITIES</a>
+                                                <ul style='width: 150px;'>
+                                                    <li><a href="#">Service Tickets</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body-wrapper">
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-right">
+                    <p>
+                        <font class="ARR">ALL RIGHTS RESERVED&nbsp;</font>
+                        <img width="20px" height="20px" style="vertical-align: middle" src="~/Images/LogoSmall.png" />
+                        <font class="logo">&nbsp;CPC</font>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

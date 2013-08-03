@@ -1,0 +1,253 @@
+﻿<div>
+    Personal Info
+</div>
+<div>
+    <table style="width: 100%;">
+        <tr>
+            <td width="20%">
+                <div style="position: relative">
+                    <img id="profileImgDtlGrid" src="~/Images/doctorphoto2.png" width="100px" height="100px" style="margin-left: 2px;" />
+                    <input style="display: none; position: absolute; top: 75px; left: 20px" type="button" value="Upload" id="patient_jqxButtonUpload" />
+                </div>
+            </td>
+            <td align="left" id="sideTableID" class="DetailGridFieldCaption">0090019                        
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div style="height: 302px; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+                    <table width="100%">
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">File Number
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxFileNumberTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">File Date
+                            </td>
+                            <td>
+                                <div id="patient_jqxFileDtCal"></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Last Name
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxLastNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">First Name
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxFirstNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Patient Id
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxPatientIdTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Med Ins Catg Name
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMedInsCatgNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Medicare Card Number
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMedicareCardNumberTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Date of Birth
+                            </td>
+                            <td>
+                                <div id='patient_jqxDoBCal'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Email
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxEmailTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">SMS Alert
+                            </td>
+                            <td width="100%">
+                                <table>
+                                    <tr>
+                                        <td width="33%">Yes<input id="smsAlert_yes" type="radio" name="smsAlertRdo" value="yes" checked="checked"></td>
+                                        <td width="33%">No<input id="smsAlert_no" type="radio" name="smsAlertRdo" value="no"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Permanent Province
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxPermanentProvinceTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Permanent City
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxPermanentCityTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Permanent District
+                            </td>
+                            <td>
+                                <div id='patient_jqxPermanentDistrictDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Permanent Street Name
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxPermanentStreetNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Permanent Street Number
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxPermanentStreetNumberTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Permanent Postal Code
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxPermanentPostalCodeTxt" />
+                            </td>
+                        </tr>
+
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Mailing Province
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMailingProvinceTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Mailing City
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMailingCityTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Mailing District
+                            </td>
+                            <td>
+                                <div id='patient_jqxMailingDistrictDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Mailing Street Name
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMailingStreetNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Mailing Street Number
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMailingStreetNumberTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Mailing Postal Code
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxMailingPostalCodeTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Ethnicity
+                            </td>
+                            <td>
+                                <div id='patient_jqxEthnicityDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Marital Status
+                            </td>
+                            <td>
+                                <div id='patient_jqxMaritalStatusDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Head of House
+                            </td>
+                            <td width="100%">
+                                <table>
+                                    <tr>
+                                        <td width="33%">Yes<input id="headOfHouse_yes" type="radio" name="headOfHouseRdo" value="yes" checked="checked"></td>
+                                        <td width="33%">No<input id="headOfHouse_no" type="radio" name="headOfHouseRdo" value="no"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Occupation Category
+                            </td>
+                            <td>
+                                <div id='patient_jqxOcupationCategoryDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Educaton
+                            </td>
+                            <td>
+                                <div id='patient_jqxEducationDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Contact Name
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxContactNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Contact Tel Number
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxContactTelNumberTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">File Manage Agency
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxFileManageAgencyTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Created By
+                            </td>
+                            <td>
+                                <input type="text" id="patient_jqxCreatedByTxt" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

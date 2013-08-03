@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "Sites Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Site/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Site/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Site/CRUD.js"></script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>SITE MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="jqxSiteButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxSiteWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="jqxSitegrid"></div>
+        </div>
+    </div>
+    <div>
+        <div style="height: 92%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Site Id
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Site Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Site Admin Id
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteAdminIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Site Admin
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteAdminTxt" />
+                    </td>
+                </tr>
+
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Services Available
+                    </td>
+                    <td>
+                        <div id='jqxSiteServicesAvailDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Province
+                    </td>   
+                    <td>
+                        <input type="text" id="jqxSitePermanentProvinceTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent City
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSitePermanentCityTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent District
+                    </td>
+                    <td>
+                        <div id='jqxSitePermanentDistrictDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Street Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSitePermanentStreetNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Street Number
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSitePermanentStreetNumberTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Postal Code
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSitePermanentPostalCodeTxt" />
+                    </td>
+                </tr>
+
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Province
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteMailingProvinceTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing City
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteMailingCityTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing District
+                    </td>
+                    <td>
+                        <div id='jqxSiteMailingDistrictDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Street Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteMailingStreetNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Street Number
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteMailingStreetNumberTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Postal Code
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSiteMailingPostalCodeTxt" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="jqxSiteButtonDelete" onclick="deleteButtonClick()" />
+                    <input type="button" value="Save" id="jqxSiteButtonSave" onclick="saveButtonClick()" />
+                    <input type="button" value="Cancel" id="jqxSiteButtonCancel" onclick="CancelRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

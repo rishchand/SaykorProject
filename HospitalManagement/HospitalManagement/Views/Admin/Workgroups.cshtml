@@ -1,0 +1,217 @@
+﻿@{
+    ViewBag.Title = "Workgroup Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Workgroups/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Workgroups/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Workgroups/CRUD.js"></script>
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>WORKGROUP MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="WorkGroup_jqxButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div style="border: none;" id="workGrpGridExpander">
+            <div class="jqx-hideborder">
+                WORKGROUPS
+            </div>
+            <div class="jqx-hideborder jqx-hidescrollbars">
+                <div id="WorkGroup_jqxgrid"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="mainSplitter2">
+            <div>
+                <div style="border: none;" id="workGrpDtlExpander">
+                    <div class="jqx-hideborder">
+                        WORKGROUP DETAILS
+                    </div>
+                    <div class="jqx-hideborder jqx-hidescrollbars">
+                        <table style="width: 100%;">
+                            <tr>
+                                <td width="20%">
+                                    <div style="position: relative">
+                                        <img id="WorkGroup_profileImgDtlGrid" src="~/Images/doctorphoto2.png" width="100px" height="100px" style="margin-left: 2px;" />
+                                        <input style="display: none; position: absolute; top: 75px; left: 20px" type="button" value="Upload" id="WorkGroup_jqxButtonUpload" />
+                                    </div>
+                                </td>
+                                <td align="left" id="WorkGroup_sideTableID" class="DetailGridFieldCaption">0090019                        
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="height: 75%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+                            <table width="100%">
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Workgroup Id
+                                    </td>
+                                    <td>
+                                        <input type="text" id="WorkGroup_jqxIdTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Workgroup Type
+                                    </td>
+                                    <td>
+                                        <div id='WorkGroup_jqxWorkgroupTypeTxtDdn'></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Workgroup Name
+                                    </td>
+                                    <td>
+                                        <input type="text" id="WorkGroup_jqxNmRsrchGrpTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Workgroup Description
+                                    </td>
+                                    <td>
+                                        <input type="text" id='WorkGroup_jqxDescriptTxt' />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Owner Type
+                                    </td>
+                                    <td>
+                                        <div id='WorkGroup_jqxOwnTypeTxtDdn'></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Owner Id
+                                    </td>
+                                    <td>
+                                        <input type="text" id='WorkGroup_jqxOwnIdTxt' />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Owner
+                                    </td>
+                                    <td>
+                                        <input type="text" id='WorkGroup_jqxOwnerTxt' />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Mobile Phone
+                                    </td>
+                                    <td>
+                                        <input type="text" id='WorkGroup_jqxMobPhoneTxt' />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Work Phone
+                                    </td>
+                                    <td>
+                                        <input type="text" id='WorkGroup_jqxWrkPhoneTxt' />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Gender
+                                    </td>
+                                    <td>
+                                        <div id='WorkGroup_jqxGenderDdn'></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Project
+                                    </td>
+                                    <td>
+                                        <div id="WorkGroup_jqxPrjctDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Center
+                                    </td>
+                                    <td>
+                                        <div id="WorkGroup_jqxCenterDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Center Admin
+                                    </td>
+                                    <td>
+                                        <input type="text" id='WorkGroup_jqxCenterAdminTxt' />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Site
+                                    </td>
+                                    <td>
+                                        <div id="WorkGroup_jqxSiteDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Services Available
+                                    </td>
+                                    <td>
+                                        <div id="WorkGroup_jqxServicesAvailDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Patients
+                                    </td>
+                                    <td>
+                                        <input type="text" id="WorkGroup_jqxPatientsTxt" />
+                                    </td>
+                                </tr>
+
+                                <tr style="height: 30px">
+                                    <td class="DetailGridFieldCaption">Providers
+                                    </td>
+                                    <td>
+                                        <input type="text" id="WorkGroup_jqxProvidersTxt" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td align="right">
+                                    <input type="button" value="Delete" id="WorkGroup_jqxButtonDelete" onclick="deleteButtonClick()" />
+                                    <input type="button" value="Save" id="WorkGroup_jqxButtonSave" onclick="saveButtonClick()" />
+                                    <input type="button" value="Cancel" id="WorkGroup_jqxButtonCancel" onclick="CancelRowEdit();" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="border: none;" id="workGrpProviderExpander">
+                    <div class="jqx-hideborder">
+                        SELECTED PROVIDER LIST&nbsp;
+                        <input type="button" value="Select Provider" id="WorkGroup_jqxButtonSelectProvider" onclick="SelectProvider();" />
+                    </div>
+                    <div class="jqx-hideborder jqx-hidescrollbars">
+                        <div id="wg_provider_jqxgrid"></div>
+                    </div>
+                </div>
+                <div id="selectProviderPopUp" title="Select PRovider">
+                    <div style="overflow: hidden;" id="windowContent">
+                        <div id="wg_jqxAllProviderGrid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

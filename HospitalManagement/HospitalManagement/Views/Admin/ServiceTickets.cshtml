@@ -1,0 +1,167 @@
+﻿@{
+    ViewBag.Title = "Service Ticket Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*iCheck Checkbox*@
+<script src="~/iCheck/jquery.icheck.js"></script>
+<link href="~/iCheck/skins/flat/green.css" rel="stylesheet" />
+<link href="~/iCheck/skins/flat/red.css" rel="stylesheet" />
+<link href="~/iCheck/skins/flat/orange.css" rel="stylesheet" />
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/ServiceTicket/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/ServiceTicket/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/ServiceTicket/CRUD.js"></script>
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>SERVICE TICKET MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="jqxSrvTxBtnAdd" onclick="AddSrvTxRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxSrvTxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="jqxSrvTxGrid"></div>
+        </div>
+    </div>
+    <div>
+        <div style="height: 92%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Priority
+                    </td>
+                    <td width="100%">
+                        <table>
+                            <tr>
+                                <td width="33%">Red<input id="iPriorityCheck_1" type="radio" name="iPriorityCheck" value="red" checked="checked"></td>
+                                <td width="33%">Orange&nbsp;&nbsp;<input id="iPriorityCheck_2" type="radio" name="iPriorityCheck" value="orange"></td>
+                                <td width="33%">Green<input id="iPriorityCheck_3" type="radio" name="iPriorityCheck" value="green"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Worksheet Level
+                    </td>
+                    <td>
+                        <div id='jqxSrvTxWorksheetLevelDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Status
+                    </td>
+                    <td>
+                        <div id='jqxSrvTxStatusDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Patient Id
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxPatientIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Patient Last Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxPatientLastNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Patient First Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxPatientFirstNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Gender
+                    </td>
+                    <td>
+                        <div id='jqxSrvTixGenderDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Patient Mobile Number 
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxPatientMobileNumberTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Provider Last Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxProviderLastNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Provider First Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxProviderFirstNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Provider Type
+                    </td>
+                    <td>
+                        <div id='jqxSrvTxProviderTypeDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Generated Source
+                    </td>
+                    <td>
+                        <div id='jqxSrvTixGenSourceDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Reason
+                    </td>
+                    <td>
+                        <div id='jqxSrvTixReasonDdn'></div>
+                    </td>
+                </tr>
+
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Service Ticket Description
+                    </td>
+                    <td>
+                        <input type="text" id="jqxSrvTxServiceTicketDescriptTxt" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="jqxSrvTxBtnDelete" onclick="deleteSrvTxButtonClick()" />
+                    <input type="button" value="Save" id="jqxSrvTxBtnSave" onclick="saveSrvTxButtonClick()" />
+                    <input type="button" value="Cancel" id="jqxSrvTxBtnCancel" onclick="CancelSrvTxRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

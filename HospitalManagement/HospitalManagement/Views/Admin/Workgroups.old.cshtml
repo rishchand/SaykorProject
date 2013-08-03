@@ -1,0 +1,186 @@
+﻿@{
+    ViewBag.Title = "Provider Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Workgroups/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Workgroups/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Workgroups/CRUD.js"></script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>WORKGROUP MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="jqxWKGPBtnAdd" onclick="AddWKGRPRecord();" />
+                <img id="imgSlider" src="~/Images/ArrowRight.png" style="vertical-align: middle;" onclick="Slide();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<table style="border: 0px solid #000; width: 100%">
+    <tr>
+        <td width="75%">
+            <div id='jqxWKGRPWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+                <div id="jqxWKGRPgrid"></div>
+            </div>
+        </td>
+        <td id="dtlsCenterGrid" style="vertical-align: top; width: 25%">
+            <table style="width: 100%;">
+                <tr>
+                    <td width="20%">
+                        <div style="position: relative">
+                            <img id="wkgrpProfileImgDtlGrid" src="~/Images/doctorphoto2.png" width="100px" height="100px" style="margin-left: 2px;" />
+                            <input style="display: none; position: absolute; top: 75px; left: 20px" type="button" value="Upload" id="jqxWKGPBtnUpload" />
+                        </div>
+                    </td>
+                    <td align="left" class="DetailGridFieldCaption">
+                        <div id="sideWKGRPID">09088</div>                      
+                    </td>
+                </tr>
+            </table>
+            <div style="height: 442px; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+                <table width="100%">
+
+                     
+
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Workgroup Type
+                        </td>
+                        <td>
+                            <div id="jqxWrkgrpTypeDdn" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Workgroup Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxNmRsrchGrpTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Workgroup Description
+                        </td>
+                        <td>
+                            <input type="text" id='jqxDescriptTxt'></input>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Owner Type
+                        </td>
+                        <td>
+                            <div id='jqxOwnTypeTxtDdn'></div>
+                        </td>
+                    </tr> 
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Owner Id
+                        </td>
+                        <td>
+                            <input type="text" id='jqxOwnIdTxt'></input>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Owner
+                        </td>
+                        <td>
+                            <input type="text" id='jqxOwnerTxt'></input>
+                        </td>
+                    </tr>    
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Mobile Phone
+                        </td>
+                        <td>
+                            <input type="text" id='jqxMobPhoneTxt'></input>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Work Phone
+                        </td>
+                        <td>
+                            <input type="text" id='jqxWrkPhoneTxt'></input>
+                        </td>
+                    </tr>                           
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Gender
+                        </td>
+                        <td>
+                            <div id='jqxGenderDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Project
+                        </td>
+                        <td>
+                            <div id="jqxPrjctDdn" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Center
+                        </td>
+                        <td>
+                            <div id="jqxCenterDdn" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Center Admin
+                        </td>
+                        <td>
+                            <input type="text" id='jqxCenterAdminTxt'></input>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Site
+                        </td>
+                        <td>
+                            <div id="jqxSiteDdn" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Services Available
+                        </td>
+                        <td>
+                            <div id="jqxServicesAvailDdn" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Patients
+                        </td>
+                        <td>
+                            <input type="text" id="jqxPatientsTxt" />
+                        </td>
+                    </tr>
+
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Providers
+                        </td>
+                        <td>
+                            <input type="text" id="jqxProvidersTxt" />
+                        </td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td align="right">
+                        <input type="button" value="Delete" id="jqxWKGPBtnDelete" onclick="deleteWKGRPButtonClick()" />
+                        <input type="button" value="Save" id="jqxWKGPBtnSave" onclick="saveWKGRPButtonClick()" />
+                        <input type="button" value="Cancel" id="jqxWKGPBtnCancel" onclick="CancelWKGRPRowEdit();" />
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+

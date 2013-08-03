@@ -1,0 +1,425 @@
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\HospitalManagement.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\HospitalManagement.pdb
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Antlr3.Runtime.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\EntityFramework.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Spatial.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Http.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Optimization.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Razor.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\WebGrease.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\EntityFramework.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Http.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Razor.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\System.Spatial.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.pdb
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\HospitalManagement.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\HospitalManagement.pdb
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Antlr3.Runtime.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\EntityFramework.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Spatial.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Optimization.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\WebGrease.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\EntityFramework.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\System.Spatial.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.pdb
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\HospitalManagement.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\HospitalManagement.pdb
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Antlr3.Runtime.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\EntityFramework.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Spatial.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Optimization.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Razor.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\WebGrease.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\EntityFramework.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Razor.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\System.Spatial.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.pdb
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\HospitalManagement.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\HospitalManagement.pdb
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Antlr3.Runtime.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\EntityFramework.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Spatial.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Optimization.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Razor.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebGrease.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\EntityFramework.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Razor.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Spatial.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\de\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\es\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\fr\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\it\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ja\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ko\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\ru\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hans\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hant\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.pdb
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\HospitalManagement.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\HospitalManagement.pdb
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Antlr3.Runtime.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\EntityFramework.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Spatial.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Optimization.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebGrease.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\EntityFramework.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Newtonsoft.Json.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Helpers.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Mvc.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.Data.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\WebMatrix.WebData.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.Core.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Web.Http.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\System.Spatial.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement\obj\Debug\HospitalManagement.pdb

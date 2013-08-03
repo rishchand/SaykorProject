@@ -1,0 +1,237 @@
+﻿@{
+    ViewBag.Title = "Medication Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<script src="~/iCheck/jquery.icheck.js"></script>
+<link href="~/iCheck/skins/square/grey.css" rel="stylesheet" />
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+<script src="~/Scripts/CPC/admin/MedicationManagement/Temp.js"></script>
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/MedicationManagement/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/MedicationManagement/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/MedicationManagement/CRUD.js"></script>
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>MEDICATION MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="MedMgt_jqxButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div style="border: none;" id="patientListExpander">
+            <div class="jqx-hideborder">
+                <table width="100%">
+                    <tr>
+                        PATIENT LIST
+                    </tr>
+                </table>
+            </div>
+            <div class="jqx-hideborder jqx-hidescrollbars">
+                <div id="pg_jqxSelectedPatientGrid"></div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="mainSplitter2">
+            <div>
+                <div style="border: none;" id="medicationListExpander">
+                    <div class="jqx-hideborder">
+                        <table width="100%">
+                            <tr>
+                                MEDICATION LIST
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="jqx-hideborder jqx-hidescrollbars">
+                        <div id="pg_jqxMedicationListGrid"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div style="border: none;" id="medicationDetailsExpander">
+                    <div class="jqx-hideborder">
+                        <table width="100%">
+                            <tr>
+                                MEDICATION DETAILS
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="jqx-hideborder jqx-hidescrollbars">
+                        <div style="height: 94%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+                            <table width="100%">
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Medication Id
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxIdTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Patient Id
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxPatientIdTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Date Prescribed
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxDatePresTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Medication Identifier
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxMedIdentifierTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Last Name
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxLastNameTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">First Name
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxFirstNameTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Gender
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxGenderDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Commonly Used Drugs
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxCommUsedDrugDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Drug Classes
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxDrugClassDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Drug Name
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxDrugNameDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Medication Start Date
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxMedStrtDtCal"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Medication End Date
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxMedEndDtCal"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Frequency of Administration
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxFregOfAdDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Medication time
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxMedTimeDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Intake
+                                    </td>
+                                    <td>
+                                        <div type="text" id="MedDtls_jqxIntakeDdn"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Dosage
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxDosageTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Reminder
+                                    </td>
+                                    <td width="100%">
+                                        <table>
+                                            <tr>
+                                                <td width="33%">Yes<input id="reminder_yes" type="radio" name="reminderRdo" value="yes" checked="checked"></td>
+                                                <td width="33%">No<input id="reminder_no" type="radio" name="reminderRdo" value="no"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Provider Id
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxProviderIdTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Provider Last Name
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxProviderLastNameTxt" />
+                                    </td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td class="DetailGridFieldCaption">Provider First Name
+                                    </td>
+                                    <td>
+                                        <input type="text" id="MedDtls_jqxProviderFirstNameTxt" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td align="right">
+                                    <input type="button" value="Delete" id="MegMgt_jqxButtonDelete" onclick="deleteButtonClick()" />
+                                    <input type="button" value="Save" id="MegMgt_jqxButtonSave" onclick="saveButtonClick()" />
+                                    <input type="button" value="Cancel" id="MegMgt_jqxButtonCancel" onclick="CancelRowEdit();" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

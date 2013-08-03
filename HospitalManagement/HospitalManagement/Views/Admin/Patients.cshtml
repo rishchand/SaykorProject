@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Patient Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<script src="~/iCheck/jquery.icheck.js"></script>
+<link href="~/iCheck/skins/square/grey.css" rel="stylesheet" />
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Patient/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Patient/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Patient/CRUD.js"></script>
+@*Temp Script*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Patient/Temp.js"></script>
+
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>PATIENT MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="patient_jqxButtonAdd" onclick="AddPatientRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxPatientWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="jqxPatientGrid"></div>
+        </div>
+    </div>
+    <div style="margin-right:8px">
+        <div id='patient_jqxSectionDdn' style="font-size: 14px;"></div>
+        <hr />
+        <div id="patient_sectionBasicInformation" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            <div id='patient_jqxExpanderPersonalInfo' style="width: 100%">
+                @Html.Partial("subwin/Patient/PersonalInfo")
+            </div>
+            <div id='patient_jqxExpanderDescriptiveInfo'>
+                @Html.Partial("subwin/Patient/DescriptiveInfo")
+            </div>
+            <div id='patient_jqxExpanderMedicalInfo'>
+                @Html.Partial("subwin/Patient/MedicalInfo")
+            </div>
+        </div>
+        <div id="patient_sectionAllergens" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/Allergens")
+        </div>
+        <div id="patient_sectionPersonalHistory" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/PersonalHistory")
+        </div>
+        <div id="patient_sectionSurgery" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/Surgery")
+        </div>
+        <div id="patient_sectionTrauma" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/Trauma")
+        </div>
+        <div id="patient_sectionBloodTransfusion" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/BloodTransfusion")
+        </div>
+        <div id="patient_sectionHereditaryDiseaseHistory" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/HereditaryDiseaseHistory")
+        </div>
+        <div id="patient_sectionFamilyHistoryofDiseases" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/FamilyHistoryofDiseases")
+        </div>
+        <div id="patient_sectionDisability" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/Disability")
+        </div>
+        <div id="patient_sectionImmunization" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/Immunization")
+        </div>
+        <div id="patient_sectionLivingConditions" style="height: 85%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: hidden; display: none">
+            @Html.Partial("subwin/Patient/LivingConditions")
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="patient_jqxButtonDelete" onclick="deletePatientBtnClick()" />
+                    <input type="button" value="Save" id="patient_jqxButtonSave" onclick="saveButtonClick()" />
+                    <input type="button" value="Cancel" id="patient_jqxButtonCancel" onclick="CancelPatientRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

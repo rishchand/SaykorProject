@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "BookEnquiry";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/BookEnquiry/INIT.js"></script>
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>BOOK ENQUIRY</td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div>
+    <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+        <div id="BookEnquiry_jqxgrid"></div>
+    </div>
+</div>

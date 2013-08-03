@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "Rx";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Rx/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Rx/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Rx/CRUD.js"></script>
+
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>Rx MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="Rx_jqxButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="Rx_jqxgrid"></div>
+        </div>
+    </div>
+    <div>
+        <div style="height: 92%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Rx Id
+                    </td>
+                    <td>
+                        <input type="text" id="Rx_jqxIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Generic Drug Names
+                    </td>
+                    <td>
+                        <input type="text" id="Rx_jqxGenericDrugNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Brand Drug Names
+                    </td>
+                    <td>
+                        <input type="text" id="Rx_jqxBRandDrugNamesTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Drug Type
+                    </td>
+                    <td>
+                        <div id='Rx_jqxDrugTypeDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Description
+                    </td>
+                    <td>
+                        <input type="text" id="Rx_jqxDescriptionTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Intake
+                    </td>
+                    <td>
+                        <div id='Rx_jqxIntakeDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Form
+                    </td>
+                    <td>
+                        <div id='Rx_jqxFormDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Color
+                    </td>
+                    <td>
+                        <div id='Rx_jqxColorDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Shape
+                    </td>
+                    <td>
+                        <div id='Rx_jqxShapeDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Used for 
+                    </td>
+                    <td>
+                        <input type="text" id="Rx_jqxUserForTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Side Effects
+                    </td>
+                    <td>
+                        <input type="text" id="Rx_jqxSideEffectsTxt" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="Rx_jqxButtonDelete" onclick="deleteButtonClick()" />
+                    <input type="button" value="Save" id="Rx_jqxButtonSave" onclick="saveButtonClick()" />
+                    <input type="button" value="Cancel" id="Rx_jqxButtonCancel" onclick="CancelRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

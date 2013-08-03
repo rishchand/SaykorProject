@@ -1,0 +1,210 @@
+﻿@{
+    ViewBag.Title = "Centers";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Center/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Center/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/Center/CRUD.js"></script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>CENTER MANAGEMENT</td>
+            <td align="right">
+                <input type="button" value="Add New" id="jqxCntBtnAdd" onclick="AddCenterRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxCenterWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="jqxCentergrid"></div>
+        </div>
+    </div>
+    <div>
+        <div style="height: 92%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Center Id
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Center Name
+                    </td>
+                    <td>
+                        <div id='jqxCntNameDdn'></div>
+                    </td>
+                </tr>
+
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Director Id
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntDirectorIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Director
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntDirectorTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Contract Date
+                    </td>
+                    <td>
+                        <div id='jqxCntContractDateCal'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Contract Description
+                    </td>
+                    <td>
+                        <input id='jqxCntContractDescriptionTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Project Id
+                    </td>
+                    <td>
+                        <input id='jqxCntProjectIdTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Project Name 
+                    </td>
+                    <td>
+                        <div id='jqxCntProjectNameDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Sites 
+                    </td>
+                    <td>
+                        <div id='jqxCntSitesDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Services Available
+                    </td>
+                    <td>
+                        <div id='jqxCntServicesAvailDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Province
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntPermanentProvinceTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent City
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntPermanentCityTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent District
+                    </td>
+                    <td>
+                        <div id='jqxCntPermanentDistrictDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Street Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntPermanentStreetNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Street Number
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntPermanentStreetNumberTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Permanent Postal Code
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntPermanentPostalCodeTxt" />
+                    </td>
+                </tr>
+
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Province
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntMailingProvinceTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing City
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntMailingCityTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing District
+                    </td>
+                    <td>
+                        <div id='jqxCntMailingDistrictDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Street Name
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntMailingStreetNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Street Number
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntMailingStreetNumberTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Mailing Postal Code
+                    </td>
+                    <td>
+                        <input type="text" id="jqxCntMailingPostalCodeTxt" />
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="jqxCntBtnDelete" onclick="deleteCenterButtonClick()" />
+                    <input type="button" value="Save" id="jqxCntBtnSave" onclick="saveCenterButtonClick()" />
+                    <input type="button" value="Cancel" id="jqxCntBtnCancel" onclick="CancelCenterRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+

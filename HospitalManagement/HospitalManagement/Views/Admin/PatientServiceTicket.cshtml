@@ -1,0 +1,230 @@
+﻿@{
+    ViewBag.Title = "Service Ticket Management";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/PatientServiceTickets/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/PatientServiceTickets/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/PatientServiceTickets/CRUD.js"></script>
+<style>
+.ticket_menu:hover
+      {
+       
+        background-color: #CE9400;
+         }
+        
+</style>
+<div id="" style="background-color: #6993AA;color:white;height: 100px; width: 100%">
+    <table style="height: 100px; width: 100%">
+        <tr>
+            <td style="font-size:medium; width: 190px"><b>TICKET:&nbsp;</b><b id="ticket_Id" ></b></td>
+           
+            <td>
+                &nbsp<img src="~/Images/patient.jpg" width="70px" height="70px"
+            </td>
+            <td style="width: 40%">
+                <table cellspacing="0px" cellpadding="5px" style="word-wrap:normal; width: 350px">
+                    <tr>
+                        <td>Name:</td>
+                        <td id="ticket_name" style="word-wrap:normal"></td>
+                        <td>&nbsp;Sex:&nbsp;<label id="ticket_gender"></label></td>
+                    </tr>
+                   
+                     <tr>
+                        <td>Disease:</td>
+                        <td>Diabetes</td>
+                        <td  style="word-wrap:normal">&nbsp;Provider Name:&nbsp;<label  id="ticket_prvd_name"></label></td>
+                    </tr>
+                </table>
+            </td>           
+            <td align="right">        
+                    <!--
+                    <button style="float: right;">Questionnaire</button>
+                    <button style="float:right" id="Center">Health Report</button>
+                    <button style="float:right" id="Right">Appointment Enquiry</button>
+                    <button style="float: right;">Referral Appointment</button>
+                    <button style="float:right" id="Center">Follow Up Appointment</button>
+                    <button style="float:right" id="Right">Disease Management</button>-->
+                     <a class="ticket_menu" href='#' id="ticket_CronicleDiseaseManagementBtn" style="float:left; color: white;  " onclick="showSubWindow('CronicleDiseaseManagement')" >慢病管理 </a>
+                    <a class="ticket_menu" href='#'  style="float:left;color: white" onclick="CPCWin()" >随访预约  </a>
+                     <a class="ticket_menu" href='#' style="float:left;color: white"  onclick="CPCWin()" >转诊预约 </a>
+                        
+                     <a class="ticket_menu" href='#' style="float:left;color: white"  onclick="CPCWin()" >预约查询 </a>
+                     <a class="ticket_menu" href='#' style="float:left;color: white"  onclick="CPCWin()" >健康报表 </a>
+                    <a class="ticket_menu" href='#' style="float:left;color: white"  onclick="CPCWin()" >调查问卷 </a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+
+<table style="border: 0px solid #000; width: 100%; ">
+    <tr style="height: 100%">
+        <td id="ticket_tickets" style="vertical-align: top; width: 32%; height: 100% ">
+            <div id="ticket_ticketsTab">
+               <ul>
+                  <li >Unprocessed Tickets</li>
+                  <li>Processed Tickets</li>
+               </ul>
+               <div>
+                  <div id="jqxSrvTxGrid"></div>
+               </div>
+               <div style=""></div>              
+           </div>
+            <div>
+                 <input type="button" value="Add New"  onclick="addNewTicket()" />
+            </div>
+        </td>
+        <td id="dtlsSrvTxGrid" style="vertical-align: top; width: 32%; height: 100%; display: none">
+            <table style="width: 100%;">
+                <tr>
+                    <td width="20%">
+                        <div style="position: relative">
+                            <img id="srvTxProfileImgDtlGrid" src="~/Images/doctorphoto2.png" width="100px" height="100px" style="margin-left: 2px;" />
+                            <input style="display: none; position: absolute; top: 75px; left: 20px" type="button" value="Upload" id="jqxSrvTxBtnUpload" />
+                        </div>
+                    </td>
+                    <td align="left" id="sideSrvTxID" class="DetailGridFieldCaption">0999980                       
+                    </td>
+                </tr>
+            </table>
+            <div style=" width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: auto">
+                <table width="100%">
+                     <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Priority
+                        </td>
+                        <td>
+                            <div id='jqxSrvTxPriorityDdn'></div>
+                        </td>
+                    </tr>
+
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Worksheet Level
+                        </td>
+                        <td>
+                            <div id='jqxSrvTxWorksheetLevelDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Status
+                        </td>
+                        <td>
+                            <div id='jqxSrvTxStatusDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Patient Id
+                        </td>
+                        <td>
+                        <input type="text" id="jqxSrvTxPatientIdTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Patient Last Name
+                        </td>
+                         <td>
+                        <input type="text" id="jqxSrvTxPatientLastNameTxt" />
+                        </td>
+                    </tr> 
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Patient First Name
+                        </td>
+                         <td>
+                        <input type="text" id="jqxSrvTxPatientFirstNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Gender
+                        </td>
+                        <td>
+                            <div id='jqxSrvTixGenderDdn'></div>
+                        </td>
+                    </tr>    
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Patient Mobile Number 
+                        </td>
+                        <td>
+                           <input type="text" id="jqxSrvTxPatientMobileNumberTxt" />
+                        </td>
+                    </tr>                           
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Provider Last Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxSrvTxProviderLastNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Provider First Name
+                        </td>
+                        <td>
+                            <input type="text" id="jqxSrvTxProviderFirstNameTxt" />
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Provider Type
+                        </td>
+                        <td>
+                            <div id='jqxSrvTxProviderTypeDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Generated Source
+                        </td>
+                        <td>
+                            <div id='jqxSrvTixGenSourceDdn'></div>
+                        </td>
+                    </tr>
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Reason
+                        </td>
+                        <td>
+                            <div id='jqxSrvTixReasonDdn'></div>
+                        </td>
+                    </tr>
+                    
+                    <tr style="height: 30px">
+                        <td class="DetailGridFieldCaption">Service Ticket Description
+                        </td>
+                        <td>
+                            <input type="text" id="jqxSrvTxServiceTicketDescriptTxt" />
+                        </td>
+                    </tr>
+                    
+                </table>                
+            </div>
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                         <img id="imgSlider" src="~/Images/ArrowLeft.png" style="vertical-align: middle;" onclick="ViewSrvTickets();" />&nbsp;Back
+                    </td>
+                    <td align="right">
+                        <input type="button" value="Delete" id="jqxSrvTxBtnDelete" onclick="deleteSrvTxButtonClick()" />
+                        <input type="button" value="Save" id="jqxSrvTxBtnSave" onclick="saveSrvTxButtonClick()" />
+                        <input type="button" value="Cancel" id="jqxSrvTxBtnCancel" onclick="CancelSrvTxRowEdit();" />
+                        
+                    </td>
+                    
+                </tr>
+            </table>
+        </td>
+        <td style="width:68%; height: 100%; vertical-align: top; ">
+            <div id="ticket_content" style="display:none">
+                 @Html.Partial("CronicleDiseaseManagement")
+            </div>
+        </td>
+    </tr>
+</table>
+

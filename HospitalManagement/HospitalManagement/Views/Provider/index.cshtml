@@ -1,0 +1,246 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="dashboard-header">
+    <table width="1060px" border="0" height="100%">
+        <tr>
+            <td width="185px" style="vertical-align: middle">
+                <span class="dashboard-small">SUNDAY</span>
+                <span class="dashboard-large">03 MAY 2013</span>
+            </td>
+            <td width="160px">
+                <img src="~/Images/graph.png" height="70px" width="150px" />
+            </td>
+            <td width="110px">
+                <span class="dashboard-small">ACTIVITIES</span><br />
+                <span class="dashboard-small">COMPLETED</span>
+                <span class="dashboard-large">25%</span>
+            </td>
+            <td>
+                <img src="~/Images/header-divider.png" height="100px" width="1px" />
+            </td>
+            <td width="10px"></td>
+            <td>
+                <table>
+                    <tr>
+                        <td class="dashboard-large">450</td>
+                        <td>
+                            <span class="dashboard-small">HIGH BLOOD</span><br />
+                            <span class="dashboard-small">PRESSURE PATIENTS</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img src="~/Images/patients.png" height="40px" width="220px" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <img src="~/Images/header-divider.png" height="100px" width="1px" />
+            </td>
+            <td width="10px"></td>
+            <td>
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <br />
+                            <span class="dashboard-small">HIGH BLOOD PRESSURE PROGRAM</span><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="dashboard-small">COMPLETE<br />
+                            </span>
+                        </td>
+                        <td>
+                            <span class="dashboard-small">INCOMPLETE<br />
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="dashboard-large">35%</span>
+                        </td>
+                        <td>
+                            <span class="dashboard-large">58%</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<br />
+<div class="quadrant" id="onepoint1">
+    <div class="quadrant-header-box">10</div>
+    <div class="quadrant-header-line">
+        <div class="quadrant-header-line-text1">RECENT</div>
+        <div class="quadrant-header-line-text2">DR. WORKGROUP</div>
+    </div>
+    <table style="padding: 40px;">
+        <tr>
+            <td>
+                <div>
+                    <img src="~/Images/DoctorPhoto2.png" width="150px" height="150px" />
+                </div>
+            </td>
+            <td>
+                <div class="quadrant-header-line-text2">CHRISTINE HSAI</div>
+                <br />
+                <br />
+                <div class="quadrant-header-line-text3">
+                    <br />
+                    Hematologist
+                </div>
+                <br />
+                <div class="quadrant-header-line-text3">128 Shenyang Road</div>
+                <br />
+                <div class="quadrant-header-line-text3">Yangpu, Shanghai</div>
+                <br />
+                <div class="quadrant-header-line-text3">TEL. +86 21 3318 9900</div>
+                <br />
+                <div class="quadrant-header-line-text3">christine.hsai@cpc.com</div>
+                <br />
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="quadrant" id="onepoint2">
+    <div class="quadrant-header-box">55</div>
+    <div class="quadrant-header-line">
+        <div class="quadrant-header-line-text1">RECENT</div>
+        <div class="quadrant-header-line-text2">WORKGROUP PATIENTS</div>
+    </div>
+    <table style="padding-top: 0px;">
+        <tr>
+            <td width="250px">
+                <table border="0" style="padding: 15px;">
+                    <tr>
+                        <td>
+                            <img src="~/Images/patients-icon.png" width="54px" height="62px" />
+                        </td>
+                        <td>
+                            <div style="padding-top: 5px" class="quadrant-header-line-text4">103</div>
+                            <div class="quadrant-header-line-text5"># OF PATIENTS WITH HIGH BLOOD PRESSURE</div>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" style="padding: 10px;">
+                    <tr>
+                        <td>
+                            <img src="~/Images/patients-icon.png" width="54px" height="62px" />
+                        </td>
+                        <td>
+                            <div style="padding-top: 5px" class="quadrant-header-line-text4">876</div>
+                            <div class="quadrant-header-line-text5">KIDNEY DESEASE</div>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="0" style="padding: 10px;">
+                    <tr>
+                        <td>
+                            <img src="~/Images/patients-icon.png" width="54px" height="62px" />
+                        </td>
+                        <td>
+                            <div style="padding-top: 5px" class="quadrant-header-line-text4">576</div>
+                            <div class="quadrant-header-line-text5"># OF PATIENTS OVERWEIGHT</div>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table border="0" style="padding: 10px;">
+                    <tr>
+                        <td>
+                            <img src="~/Images/patients-icon.png" width="54px" height="62px" />
+                        </td>
+                        <td>
+                            <div style="padding-top: 5px" class="quadrant-header-line-text4">123</div>
+                            <div class="quadrant-header-line-text5">STROKE</div>
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div class="quadrant" id="twopoint1">
+    <div class="quadrant-header-box">4</div>
+    <div class="quadrant-header-line">
+        <div class="quadrant-header-line-text1">ACTIVITIES</div>
+        <div class="quadrant-header-line-text2">WORKGROUP ACTIVITIES</div>
+    </div>
+    <div style="padding: 20px; padding-top: 60px">
+        <table class="hovertable" width="440px">
+            <tr>
+                <th>Info Header 1</th>
+                <th>Info Header 2</th>
+                <th>Info Header 3</th>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                <td>Item 1A</td>
+                <td>Item 1B</td>
+                <td>Item 1C</td>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                <td>Item 2A</td>
+                <td>Item 2B</td>
+                <td>Item 2C</td>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                <td>Item 3A</td>
+                <td>Item 3B</td>
+                <td>Item 3C</td>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                <td>Item 4A</td>
+                <td>Item 4B</td>
+                <td>Item 4C</td>
+            </tr>
+            <tr onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                <td>Item 5A</td>
+                <td>Item 5B</td>
+                <td>Item 5C</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="quadrant" id="twopoint2">
+    <div class="quadrant-header-box">7</div>
+    <div class="quadrant-header-line">
+        <div class="quadrant-header-line-text1">
+            <div style="line-height: 15px; text-align: left;">
+                <br />
+                OPEN<br />
+                <span class="quadrant-header-line-text1-red">4 OVERDUE</span>
+            </div>
+        </div>
+        <div class="quadrant-header-line-text2">DAILY ACTIVITIES</div>
+    </div>
+
+    <div style="padding: 20px; padding-top: 60px">
+        <table width="440px">
+            <tr>
+                <td style="font: bold 12px Arial">Meeting with Ming Ming</td>
+                <td align="right" style="font: italic 12px Arial">Tuesday, 2pm</td>
+            </tr>
+            <tr>
+                <td style="font: bold 12px Arial">Meeting with Ming Ming</td>
+                <td align="right" style="font: italic 12px Arial">Tuesday, 2pm</td>
+            </tr>
+        </table>
+    </div>
+</div>

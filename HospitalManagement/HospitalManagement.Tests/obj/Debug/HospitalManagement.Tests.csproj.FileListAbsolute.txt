@@ -1,0 +1,340 @@
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll.config
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.pdb
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.xml
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\Visual Studio 2012\Projects\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll.config
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.pdb
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.xml
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\GitHub\hkgclient\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll.config
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.pdb
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.xml
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\hkgclient\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.pdb
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll.config
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.pdb
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Optimization.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.pdb
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.xml
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.csprojResolveAssemblyReference.cache
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.dll
+C:\dev\fdevteam\hkgclient-master\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll.config
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.Tests.pdb
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\HospitalManagement.pdb
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Web.Http.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.Edm.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\Microsoft.Data.OData.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\System.Spatial.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\EntityFramework.xml
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\de\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\es\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\fr\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\it\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ja\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ko\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\ru\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hans\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\bin\Debug\zh-Hant\System.Spatial.resources.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.csprojResolveAssemblyReference.cache
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.dll
+C:\Users\kris\Documents\GitHub\hkgclientall\hkgclient-master\HospitalManagement\HospitalManagement.Tests\obj\Debug\HospitalManagement.Tests.pdb

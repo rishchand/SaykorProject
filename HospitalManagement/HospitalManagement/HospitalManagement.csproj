@@ -1,0 +1,1590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A383780-A5DA-4A9A-A5CA-B288C10CCA61}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitalManagement</RootNamespace>
+    <AssemblyName>HospitalManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.0\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ProviderController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Calendar\codebase\dhtmlxscheduler.css" />
+    <Content Include="Calendar\codebase\dhtmlxscheduler.js" />
+    <Content Include="Calendar\codebase\dhtmlxscheduler_classic.css" />
+    <Content Include="Calendar\codebase\dhtmlxscheduler_glossy.css" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Calendar\codebase\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Calendar\codebase\imgs\buttons.png" />
+    <Content Include="Calendar\codebase\imgs\but_repeat.gif" />
+    <Content Include="Calendar\codebase\imgs\calendar.gif" />
+    <Content Include="Calendar\codebase\imgs\clock_big.gif" />
+    <Content Include="Calendar\codebase\imgs\clock_small.gif" />
+    <Content Include="Calendar\codebase\imgs\collapse_expand_icon.gif" />
+    <Content Include="Calendar\codebase\imgs\controls.gif" />
+    <Content Include="Calendar\codebase\imgs\databg.png" />
+    <Content Include="Calendar\codebase\imgs\databg_now.png" />
+    <Content Include="Calendar\codebase\imgs\export_ical.png" />
+    <Content Include="Calendar\codebase\imgs\export_pdf.png" />
+    <Content Include="Calendar\codebase\imgs\icon.png" />
+    <Content Include="Calendar\codebase\imgs\images.png" />
+    <Content Include="Calendar\codebase\imgs\loading.gif" />
+    <Content Include="Calendar\codebase\imgs\resize_dots.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\controls.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\databg.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Calendar\codebase\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\blue_tab.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\buttons.gif" />
+    <Content Include="Calendar\codebase\imgs_glossy\but_repeat.gif" />
+    <Content Include="Calendar\codebase\imgs_glossy\calendar.gif" />
+    <Content Include="Calendar\codebase\imgs_glossy\clock_big.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\clock_small.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Calendar\codebase\imgs_glossy\controlls5.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\databg.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\databg_now.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\event-bg.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\export_ical.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\export_pdf.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\icon.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\left-separator.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\left-time-bg.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\lightbox.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\loading.gif" />
+    <Content Include="Calendar\codebase\imgs_glossy\move.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\top-days-bg.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\top-separator.gif" />
+    <Content Include="Calendar\codebase\imgs_glossy\white_tab.png" />
+    <Content Include="Calendar\codebase\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Calendar\license.txt" />
+    <Content Include="Calendar\readme.txt" />
+    <Content Include="Calendar\samples\01_initialization_loading\01_basic_init.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\02_hour_scale_format.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\03_header_format.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\05_loading_database.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\06_multi_day_events.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\07_locale_usage.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\08_options.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\09_connector_options.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\10_loading_database_json.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\11_connector_options_json.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\12_block_csrf.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\13_touch_ui.html" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\events.xml" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\types.xml" />
+    <Content Include="Calendar\samples\02_customization\01_events_coloring.html" />
+    <Content Include="Calendar\samples\02_customization\02_days_coloring.html" />
+    <Content Include="Calendar\samples\02_customization\03_hours_coloring.html" />
+    <Content Include="Calendar\samples\02_customization\04_month_days_coloring.html" />
+    <Content Include="Calendar\samples\02_customization\05_custom_editor.html" />
+    <Content Include="Calendar\samples\02_customization\06_templates.html" />
+    <Content Include="Calendar\samples\02_customization\07_custom_view.html" />
+    <Content Include="Calendar\samples\02_customization\08_validation.html" />
+    <Content Include="Calendar\samples\02_customization\09_timestep.html" />
+    <Content Include="Calendar\samples\02_customization\10_without_toolbar.html" />
+    <Content Include="Calendar\samples\02_customization\11_auto_end_date.html" />
+    <Content Include="Calendar\samples\02_customization\12_full_day_event.html" />
+    <Content Include="Calendar\samples\02_customization\13_single_checkbox_section.html" />
+    <Content Include="Calendar\samples\02_customization\14_radio_buttons_section.html" />
+    <Content Include="Calendar\samples\02_customization\15_combo_select.html" />
+    <Content Include="Calendar\samples\02_customization\16_custom_form.html" />
+    <Content Include="Calendar\samples\02_customization\17_lightbox_header.html" />
+    <Content Include="Calendar\samples\02_customization\18_combo_select_from_db.html" />
+    <Content Include="Calendar\samples\02_customization\20_multiline_event_bars.html" />
+    <Content Include="Calendar\samples\02_customization\21_custom_hour_scale.html" />
+    <Content Include="Calendar\samples\02_customization\22_opertions_with_lightbox.html" />
+    <Content Include="Calendar\samples\02_customization\23_current_time.html" />
+    <Content Include="Calendar\samples\02_customization\24_cascade_event_display.html" />
+    <Content Include="Calendar\samples\02_customization\25_color_property.html" />
+    <Content Include="Calendar\samples\02_customization\26_linked_selects_in_lightbox.html" />
+    <Content Include="Calendar\samples\02_customization\27_custom_event_box.html" />
+    <Content Include="Calendar\samples\02_customization\28_lightbox_default_value.html" />
+    <Content Include="Calendar\samples\02_customization\29_changing_lightbox_configurations.html" />
+    <Content Include="Calendar\samples\02_customization\30_lightbox_time_format.html" />
+    <Content Include="Calendar\samples\02_customization\31_view_more.html" />
+    <Content Include="Calendar\samples\02_customization\data\events.xml" />
+    <Content Include="Calendar\samples\02_customization\imgs\databg.png" />
+    <Content Include="Calendar\samples\02_customization\imgs\hour_bg.png" />
+    <Content Include="Calendar\samples\02_customization\imgs\week_bg.png" />
+    <Content Include="Calendar\samples\03_extensions\01_recurring_events.html" />
+    <Content Include="Calendar\samples\03_extensions\02_units_view.html" />
+    <Content Include="Calendar\samples\03_extensions\03_agenda_view.html" />
+    <Content Include="Calendar\samples\03_extensions\04_year_view.html" />
+    <Content Include="Calendar\samples\03_extensions\05_expand_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\06_links_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\07_navigation_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\08_cookies_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\09_html_templates_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\10_url_date_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\11_pdf_plugin.html" />
+    <Content Include="Calendar\samples\03_extensions\12_readonly_form.html" />
+    <Content Include="Calendar\samples\03_extensions\13_multisource.html" />
+    <Content Include="Calendar\samples\03_extensions\14_readonly_event.html" />
+    <Content Include="Calendar\samples\03_extensions\15_collision.html" />
+    <Content Include="Calendar\samples\03_extensions\16_limitation.html" />
+    <Content Include="Calendar\samples\03_extensions\17_connector_units.html" />
+    <Content Include="Calendar\samples\03_extensions\18_scroll_units.html" />
+    <Content Include="Calendar\samples\03_extensions\19_map_view.html" />
+    <Content Include="Calendar\samples\03_extensions\20_tooltip.html" />
+    <Content Include="Calendar\samples\03_extensions\21_multiselect_options.html" />
+    <Content Include="Calendar\samples\03_extensions\22_multiselect_initial_loading.html" />
+    <Content Include="Calendar\samples\03_extensions\23_map_view_timeframes.html" />
+    <Content Include="Calendar\samples\03_extensions\24_week_agenda.html" />
+    <Content Include="Calendar\samples\03_extensions\25_advanced_limitation.html" />
+    <Content Include="Calendar\samples\03_extensions\26_multi_day_visible.html" />
+    <Content Include="Calendar\samples\03_extensions\27_grid_view.html" />
+    <Content Include="Calendar\samples\03_extensions\28_container_autoresize.html" />
+    <Content Include="Calendar\samples\03_extensions\29_quick_info.html" />
+    <Content Include="Calendar\samples\03_extensions\30_quick_info_detached.html" />
+    <Content Include="Calendar\samples\03_extensions\data\events.xml" />
+    <Content Include="Calendar\samples\03_extensions\data\units.xml" />
+    <Content Include="Calendar\samples\04_export\01_serialize_xml.html" />
+    <Content Include="Calendar\samples\04_export\02_serialize_json.html" />
+    <Content Include="Calendar\samples\04_export\03_serialize_ical.html" />
+    <Content Include="Calendar\samples\04_export\04_pdf.html" />
+    <Content Include="Calendar\samples\04_export\05_serialize_recurring.html" />
+    <Content Include="Calendar\samples\04_export\data\data.xml" />
+    <Content Include="Calendar\samples\04_export\data\data_r.xml" />
+    <Content Include="Calendar\samples\04_export\data\dummy.html" />
+    <Content Include="Calendar\samples\04_export\data\events.xml" />
+    <Content Include="Calendar\samples\05_calendar\01_select.html" />
+    <Content Include="Calendar\samples\05_calendar\02_without_scheduler.html" />
+    <Content Include="Calendar\samples\05_calendar\03_in_form.html" />
+    <Content Include="Calendar\samples\05_calendar\05_plain_structure.html" />
+    <Content Include="Calendar\samples\05_calendar\06_recurring_form.html" />
+    <Content Include="Calendar\samples\05_calendar\data\events.xml" />
+    <Content Include="Calendar\samples\06_timeline\01_slots.html" />
+    <Content Include="Calendar\samples\06_timeline\02_lines.html" />
+    <Content Include="Calendar\samples\06_timeline\03_tree.html" />
+    <Content Include="Calendar\samples\06_timeline\04_tree_db.html" />
+    <Content Include="Calendar\samples\06_timeline\05_week_lines.html" />
+    <Content Include="Calendar\samples\06_timeline\06_pdf.html" />
+    <Content Include="Calendar\samples\06_timeline\07_second_scale.html" />
+    <Content Include="Calendar\samples\06_timeline\08_time_scale.html" />
+    <Content Include="Calendar\samples\06_timeline\09_drag_duration.html" />
+    <Content Include="Calendar\samples\06_timeline\10_order_and_rounding.html" />
+    <Content Include="Calendar\samples\06_timeline\11_navigate_hours.html" />
+    <Content Include="Calendar\samples\06_timeline\12_section_tooltip.html" />
+    <Content Include="Calendar\samples\06_timeline\data\events.xml" />
+    <Content Include="Calendar\samples\06_timeline\data\units.xml" />
+    <Content Include="Calendar\samples\07_skins\01_default.html" />
+    <Content Include="Calendar\samples\07_skins\02_glossy.html" />
+    <Content Include="Calendar\samples\07_skins\03_classic.html" />
+    <Content Include="Calendar\samples\07_skins\04_default_alt.html" />
+    <Content Include="Calendar\samples\07_skins\05_glossy_alt.html" />
+    <Content Include="Calendar\samples\07_skins\06_classic_alt.html" />
+    <Content Include="Calendar\samples\07_skins\07_default_rec.html" />
+    <Content Include="Calendar\samples\07_skins\08_glossy_rec.html" />
+    <Content Include="Calendar\samples\07_skins\09_classic_rec.html" />
+    <Content Include="Calendar\samples\07_skins\10_default_alt_rec.html" />
+    <Content Include="Calendar\samples\07_skins\11_glossy_alt_rec.html" />
+    <Content Include="Calendar\samples\07_skins\12_classic_alt_rec.html" />
+    <Content Include="Calendar\samples\07_skins\data\events.xml" />
+    <Content Include="Calendar\samples\08_shared_events\combined.html" />
+    <Content Include="Calendar\samples\08_shared_events\index.html" />
+    <Content Include="Calendar\samples\08_shared_events\user_1.html" />
+    <Content Include="Calendar\samples\08_shared_events\user_1_combined.html" />
+    <Content Include="Calendar\samples\08_shared_events\user_2.html" />
+    <Content Include="Calendar\samples\09_api\01_action_data.html" />
+    <Content Include="Calendar\samples\09_api\02_dhtmlx_message.html" />
+    <Content Include="Calendar\samples\09_api\03_highlighted_timespans.html" />
+    <Content Include="Calendar\samples\09_api\04_highlighted_sections_units.html" />
+    <Content Include="Calendar\samples\09_api\05_mouse_over_highlight.html" />
+    <Content Include="Calendar\samples\09_api\06_hightlight_and_single_click_create.html" />
+    <Content Include="Calendar\samples\09_api\07_highlighted_timespans_month_view.html" />
+    <Content Include="Calendar\samples\09_api\08_show_event.html" />
+    <Content Include="Calendar\samples\09_api\09_filtering_events.html" />
+    <Content Include="Calendar\samples\09_api\data\imgs\!_yellow.png" />
+    <Content Include="Calendar\samples\09_api\data\imgs\dots.png" />
+    <Content Include="Calendar\samples\09_api\data\imgs\fat_lines.png" />
+    <Content Include="Calendar\samples\09_api\data\imgs\medium_lines.png" />
+    <Content Include="Calendar\samples\09_api\data\imgs\small_lines.png" />
+    <Content Include="Calendar\samples\09_api\data\imgs\v_green.png" />
+    <Content Include="Calendar\samples\10_integration\01_dhtmlxMenu.html" />
+    <Content Include="Calendar\samples\10_integration\02_dhtmlxTree_outer_drag.html" />
+    <Content Include="Calendar\samples\10_integration\03_dhtmlxLayout.html" />
+    <Content Include="Calendar\samples\10_integration\04_datastore.html" />
+    <Content Include="Calendar\samples\10_integration\05_dhtmlxLayout_terrace.html" />
+    <Content Include="Calendar\samples\10_integration\06_jquery.html" />
+    <Content Include="Calendar\samples\10_integration\07_backbone.html" />
+    <Content Include="Calendar\samples\10_integration\data\dhxmenu.xml" />
+    <Content Include="Calendar\samples\10_integration\data\events.xml" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\about.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\about_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\bug_reporting.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\bug_reporting_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\close.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\close_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\copy.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\copy_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\cut.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\cut_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\help.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\help_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\new.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\new_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\open.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\open_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\page_setup.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\page_setup_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\paste.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\paste_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\print.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\print_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\redo.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\redo_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\save.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\save_as.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\save_as_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\save_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\select_all.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\select_all_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\undo.gif" />
+    <Content Include="Calendar\samples\10_integration\data\imgs\undo_dis.gif" />
+    <Content Include="Calendar\samples\10_integration\data\tree.xml" />
+    <Content Include="Calendar\samples\11_scales\01_month_ignore.html" />
+    <Content Include="Calendar\samples\11_scales\02_week_ignore.html" />
+    <Content Include="Calendar\samples\11_scales\03_two_work_weeks.html" />
+    <Content Include="Calendar\samples\11_scales\04_timeline_ignore.html" />
+    <Content Include="Calendar\samples\11_scales\05_timeline_double_ignore.html" />
+    <Content Include="Calendar\samples\11_scales\06_timeline_hours.html" />
+    <Content Include="Calendar\samples\11_scales\07_timeline_hours_marker.html" />
+    <Content Include="Calendar\samples\11_scales\08_timeline_ignore_marker.html" />
+    <Content Include="Calendar\samples\11_scales\09_timeline_preserve_scale.html" />
+    <Content Include="Calendar\samples\11_scales\data\events.xml" />
+    <Content Include="Calendar\samples\common\backbone\backbone.js" />
+    <Content Include="Calendar\samples\common\backbone\underscore.js" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\dhtmlxcombo.css" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\dhtmlxcombo.js" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\imgs\bg_selection.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\imgs\blank.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\imgs\combo_select.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\imgs\combo_select_dhx_black.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\imgs\combo_select_dhx_blue.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxCombo\imgs\combo_select_dhx_skyblue.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxDataStore\datastore.js" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\dhtmlxcommon.js" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\dhtmlxcontainer.js" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\dhtmlxlayout.css" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\dhtmlxlayout.js" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_bg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_bg_sb.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_btns.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_collapsedhor.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_collapsedver.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_cpanel_btn_dock.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_cpanel_btn_undock.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_drag_hor.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_drag_ver.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_progress.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_skyblue\dhxlayout_progress_global.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\bg_def.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\dhxlayout_bg_sb.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\dhxlayout_btns.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\dhxlayout_drag_hor.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\dhxlayout_drag_ver.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\dhxlayout_progress.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\imgs\dhxlayout_dhx_terrace\dhxlayout_progress_global.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\skins\dhtmlxlayout_dhx_skyblue.css" />
+    <Content Include="Calendar\samples\common\dhtmlxLayout\skins\dhtmlxlayout_dhx_terrace.css" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\dhtmlxmenu.js" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_bg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_chrd.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_loader.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_subar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_subsepbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_black\dhtmlxmenu_upar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_bg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_chrd.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_loader.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_subar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_subsepbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_blue\dhtmlxmenu_upar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_chrd.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_loader.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_subar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhtmlxmenu_upar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_bg_acccell.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_subselbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_subsepbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_topselbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_skyblue\dhxmenu_topsepbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_chrd.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_loader.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_subar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_subselbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_subsepbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_topbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_topselbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_topsepbg.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\imgs\dhxmenu_dhx_web\dhxmenu_upar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_black.css" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_blue.css" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_skyblue.css" />
+    <Content Include="Calendar\samples\common\dhtmlxMenu\skins\dhtmlxmenu_dhx_web.css" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\dhtmlxtree.css" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\dhtmlxtree.js" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\blank.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\but_cut.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\blank.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\books_close.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\books_open.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\folderClosed.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\folderOpen.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\iconCheckAll.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\iconCheckDis.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\iconCheckGray.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\iconText.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\iconUncheckAll.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\iconUncheckDis.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\leaf.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\leaf2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\leaf3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\leaf_2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\line.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\line1.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\line2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\line3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\line4.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\lock.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\minus.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\minus1.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\minus2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\minus3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\minus4.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\minus5.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\plus.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\plus1.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\plus2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\plus3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\plus4.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\plus5.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\radio_off.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\radio_on.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\tombs.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\csh_yellowbooks\tombs_open.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\folderClosed.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\folderOpen.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\iconCheckAll.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\iconCheckDis.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\iconCheckGray.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\iconUncheckAll.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\iconUncheckDis.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\leaf.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line1.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line1_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line2_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line3_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line4.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\line4_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\lock.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus1.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus2_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus3_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus4.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus4_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus5.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus5_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\minus_ar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus1.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus2.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus2_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus3.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus3_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus4.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus4_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus5.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus5_rtl.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\plus_ar.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\radio_off.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\radio_on.gif" />
+    <Content Include="Calendar\samples\common\dhtmlxTree\imgs\sky_blue_sel_tree.png" />
+    <Content Include="Calendar\samples\common\dump.sql" />
+    <Content Include="Calendar\samples\common\testdata.js" />
+    <Content Include="Calendar\samples\readme.txt" />
+    <Content Include="Calendar\sources\dhtmlxscheduler.css" />
+    <Content Include="Calendar\sources\dhtmlxscheduler.js" />
+    <Content Include="Calendar\sources\dhtmlxscheduler_classic.css" />
+    <Content Include="Calendar\sources\dhtmlxscheduler_glossy.css" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Calendar\sources\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Calendar\sources\imgs\buttons.png" />
+    <Content Include="Calendar\sources\imgs\but_repeat.gif" />
+    <Content Include="Calendar\sources\imgs\calendar.gif" />
+    <Content Include="Calendar\sources\imgs\clock_big.gif" />
+    <Content Include="Calendar\sources\imgs\clock_small.gif" />
+    <Content Include="Calendar\sources\imgs\collapse_expand_icon.gif" />
+    <Content Include="Calendar\sources\imgs\controls.gif" />
+    <Content Include="Calendar\sources\imgs\databg.png" />
+    <Content Include="Calendar\sources\imgs\databg_now.png" />
+    <Content Include="Calendar\sources\imgs\export_ical.png" />
+    <Content Include="Calendar\sources\imgs\export_pdf.png" />
+    <Content Include="Calendar\sources\imgs\icon.png" />
+    <Content Include="Calendar\sources\imgs\images.png" />
+    <Content Include="Calendar\sources\imgs\loading.gif" />
+    <Content Include="Calendar\sources\imgs\resize_dots.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\controls.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\databg.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Calendar\sources\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Calendar\sources\imgs_glossy\blue_tab.png" />
+    <Content Include="Calendar\sources\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Calendar\sources\imgs_glossy\buttons.gif" />
+    <Content Include="Calendar\sources\imgs_glossy\but_repeat.gif" />
+    <Content Include="Calendar\sources\imgs_glossy\calendar.gif" />
+    <Content Include="Calendar\sources\imgs_glossy\clock_big.png" />
+    <Content Include="Calendar\sources\imgs_glossy\clock_small.png" />
+    <Content Include="Calendar\sources\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Calendar\sources\imgs_glossy\controlls5.png" />
+    <Content Include="Calendar\sources\imgs_glossy\databg.png" />
+    <Content Include="Calendar\sources\imgs_glossy\databg_now.png" />
+    <Content Include="Calendar\sources\imgs_glossy\event-bg.png" />
+    <Content Include="Calendar\sources\imgs_glossy\export_ical.png" />
+    <Content Include="Calendar\sources\imgs_glossy\export_pdf.png" />
+    <Content Include="Calendar\sources\imgs_glossy\icon.png" />
+    <Content Include="Calendar\sources\imgs_glossy\left-separator.png" />
+    <Content Include="Calendar\sources\imgs_glossy\left-time-bg.png" />
+    <Content Include="Calendar\sources\imgs_glossy\lightbox.png" />
+    <Content Include="Calendar\sources\imgs_glossy\loading.gif" />
+    <Content Include="Calendar\sources\imgs_glossy\move.png" />
+    <Content Include="Calendar\sources\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Calendar\sources\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Calendar\sources\imgs_glossy\top-days-bg.png" />
+    <Content Include="Calendar\sources\imgs_glossy\top-separator.gif" />
+    <Content Include="Calendar\sources\imgs_glossy\white_tab.png" />
+    <Content Include="Calendar\sources\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Calendar\sources\locale\locale.js" />
+    <Content Include="Calendar\sources\locale\locale_ar.js" />
+    <Content Include="Calendar\sources\locale\locale_be.js" />
+    <Content Include="Calendar\sources\locale\locale_ca.js" />
+    <Content Include="Calendar\sources\locale\locale_cn.js" />
+    <Content Include="Calendar\sources\locale\locale_cs.js" />
+    <Content Include="Calendar\sources\locale\locale_da.js" />
+    <Content Include="Calendar\sources\locale\locale_de.js" />
+    <Content Include="Calendar\sources\locale\locale_el.js" />
+    <Content Include="Calendar\sources\locale\locale_es.js" />
+    <Content Include="Calendar\sources\locale\locale_fi.js" />
+    <Content Include="Calendar\sources\locale\locale_fr.js" />
+    <Content Include="Calendar\sources\locale\locale_he.js" />
+    <Content Include="Calendar\sources\locale\locale_hu.js" />
+    <Content Include="Calendar\sources\locale\locale_id.js" />
+    <Content Include="Calendar\sources\locale\locale_it.js" />
+    <Content Include="Calendar\sources\locale\locale_jp.js" />
+    <Content Include="Calendar\sources\locale\locale_nb.js" />
+    <Content Include="Calendar\sources\locale\locale_nl.js" />
+    <Content Include="Calendar\sources\locale\locale_no.js" />
+    <Content Include="Calendar\sources\locale\locale_pl.js" />
+    <Content Include="Calendar\sources\locale\locale_pt.js" />
+    <Content Include="Calendar\sources\locale\locale_ro.js" />
+    <Content Include="Calendar\sources\locale\locale_ru.js" />
+    <Content Include="Calendar\sources\locale\locale_si.js" />
+    <Content Include="Calendar\sources\locale\locale_sk.js" />
+    <Content Include="Calendar\sources\locale\locale_sv.js" />
+    <Content Include="Calendar\sources\locale\locale_tr.js" />
+    <Content Include="Calendar\sources\locale\locale_ua.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_be.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_cn.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_cs.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_da.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_de.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_el.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_es.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_fi.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_fr.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_it.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_nb.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_nl.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_pl.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_pt.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_ro.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_ru.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_sk.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_sv.js" />
+    <Content Include="Calendar\sources\locale\recurring\locale_recurring_ua.js" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_be.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_cn.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_de.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_el.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_es.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_fr.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_it.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_nl.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_ro.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_ru.html" />
+    <Content Include="Calendar\sources\locale\recurring\repeat_template_sk.html" />
+    <Content Include="Calendar\whatsnew.txt" />
+    <Content Include="iCheck\demo\css\custom.css" />
+    <Content Include="iCheck\demo\css\icheck.png" />
+    <Content Include="iCheck\demo\css\ie\arrow-bottom.png" />
+    <Content Include="iCheck\demo\css\ie\arrow-top.png" />
+    <Content Include="iCheck\demo\css\ie\header-line.png" />
+    <Content Include="iCheck\demo\css\ie\icon-fork.png" />
+    <Content Include="iCheck\demo\css\ie\icon-github.png" />
+    <Content Include="iCheck\demo\css\ie\icon-lab.png" />
+    <Content Include="iCheck\demo\css\ie\icon-options.png" />
+    <Content Include="iCheck\demo\css\ie\icon-star.png" />
+    <Content Include="iCheck\demo\css\normalize.css" />
+    <Content Include="iCheck\demo\index.html" />
+    <Content Include="iCheck\demo\js\custom.js" />
+    <Content Include="iCheck\demo\js\jquery.js" />
+    <Content Include="iCheck\demo\js\zepto.js" />
+    <Content Include="iCheck\jquery.icheck.js" />
+    <Content Include="iCheck\jquery.icheck.min.js" />
+    <Content Include="iCheck\skins\all.css" />
+    <Content Include="iCheck\skins\flat\aero%402x.png" />
+    <Content Include="iCheck\skins\flat\aero.css" />
+    <Content Include="iCheck\skins\flat\aero.png" />
+    <Content Include="iCheck\skins\flat\blue%402x.png" />
+    <Content Include="iCheck\skins\flat\blue.css" />
+    <Content Include="iCheck\skins\flat\blue.png" />
+    <Content Include="iCheck\skins\flat\flat%402x.png" />
+    <Content Include="iCheck\skins\flat\flat.css" />
+    <Content Include="iCheck\skins\flat\flat.png" />
+    <Content Include="iCheck\skins\flat\green%402x.png" />
+    <Content Include="iCheck\skins\flat\green.css" />
+    <Content Include="iCheck\skins\flat\green.png" />
+    <Content Include="iCheck\skins\flat\grey%402x.png" />
+    <Content Include="iCheck\skins\flat\grey.css" />
+    <Content Include="iCheck\skins\flat\grey.png" />
+    <Content Include="iCheck\skins\flat\orange%402x.png" />
+    <Content Include="iCheck\skins\flat\orange.css" />
+    <Content Include="iCheck\skins\flat\orange.png" />
+    <Content Include="iCheck\skins\flat\pink%402x.png" />
+    <Content Include="iCheck\skins\flat\pink.css" />
+    <Content Include="iCheck\skins\flat\pink.png" />
+    <Content Include="iCheck\skins\flat\purple%402x.png" />
+    <Content Include="iCheck\skins\flat\purple.css" />
+    <Content Include="iCheck\skins\flat\purple.png" />
+    <Content Include="iCheck\skins\flat\red%402x.png" />
+    <Content Include="iCheck\skins\flat\red.css" />
+    <Content Include="iCheck\skins\flat\red.png" />
+    <Content Include="iCheck\skins\flat\yellow%402x.png" />
+    <Content Include="iCheck\skins\flat\yellow.css" />
+    <Content Include="iCheck\skins\flat\yellow.png" />
+    <Content Include="iCheck\skins\flat\_all.css" />
+    <Content Include="iCheck\skins\futurico\futurico%402x.png" />
+    <Content Include="iCheck\skins\futurico\futurico.css" />
+    <Content Include="iCheck\skins\futurico\futurico.png" />
+    <Content Include="iCheck\skins\line\aero.css" />
+    <Content Include="iCheck\skins\line\blue.css" />
+    <Content Include="iCheck\skins\line\green.css" />
+    <Content Include="iCheck\skins\line\grey.css" />
+    <Content Include="iCheck\skins\line\line%402x.png" />
+    <Content Include="iCheck\skins\line\line.css" />
+    <Content Include="iCheck\skins\line\line.png" />
+    <Content Include="iCheck\skins\line\orange.css" />
+    <Content Include="iCheck\skins\line\pink.css" />
+    <Content Include="iCheck\skins\line\purple.css" />
+    <Content Include="iCheck\skins\line\red.css" />
+    <Content Include="iCheck\skins\line\yellow.css" />
+    <Content Include="iCheck\skins\line\_all.css" />
+    <Content Include="iCheck\skins\minimal\aero%402x.png" />
+    <Content Include="iCheck\skins\minimal\aero.css" />
+    <Content Include="iCheck\skins\minimal\aero.png" />
+    <Content Include="iCheck\skins\minimal\blue%402x.png" />
+    <Content Include="iCheck\skins\minimal\blue.css" />
+    <Content Include="iCheck\skins\minimal\blue.png" />
+    <Content Include="iCheck\skins\minimal\green%402x.png" />
+    <Content Include="iCheck\skins\minimal\green.css" />
+    <Content Include="iCheck\skins\minimal\green.png" />
+    <Content Include="iCheck\skins\minimal\grey%402x.png" />
+    <Content Include="iCheck\skins\minimal\grey.css" />
+    <Content Include="iCheck\skins\minimal\grey.png" />
+    <Content Include="iCheck\skins\minimal\minimal%402x.png" />
+    <Content Include="iCheck\skins\minimal\minimal.css" />
+    <Content Include="iCheck\skins\minimal\minimal.png" />
+    <Content Include="iCheck\skins\minimal\orange%402x.png" />
+    <Content Include="iCheck\skins\minimal\orange.css" />
+    <Content Include="iCheck\skins\minimal\orange.png" />
+    <Content Include="iCheck\skins\minimal\pink%402x.png" />
+    <Content Include="iCheck\skins\minimal\pink.css" />
+    <Content Include="iCheck\skins\minimal\pink.png" />
+    <Content Include="iCheck\skins\minimal\purple%402x.png" />
+    <Content Include="iCheck\skins\minimal\purple.css" />
+    <Content Include="iCheck\skins\minimal\purple.png" />
+    <Content Include="iCheck\skins\minimal\red%402x.png" />
+    <Content Include="iCheck\skins\minimal\red.css" />
+    <Content Include="iCheck\skins\minimal\red.png" />
+    <Content Include="iCheck\skins\minimal\yellow%402x.png" />
+    <Content Include="iCheck\skins\minimal\yellow.css" />
+    <Content Include="iCheck\skins\minimal\yellow.png" />
+    <Content Include="iCheck\skins\minimal\_all.css" />
+    <Content Include="iCheck\skins\polaris\polaris%402x.png" />
+    <Content Include="iCheck\skins\polaris\polaris.css" />
+    <Content Include="iCheck\skins\polaris\polaris.png" />
+    <Content Include="iCheck\skins\square\aero%402x.png" />
+    <Content Include="iCheck\skins\square\aero.css" />
+    <Content Include="iCheck\skins\square\aero.png" />
+    <Content Include="iCheck\skins\square\blue%402x.png" />
+    <Content Include="iCheck\skins\square\blue.css" />
+    <Content Include="iCheck\skins\square\blue.png" />
+    <Content Include="iCheck\skins\square\green%402x.png" />
+    <Content Include="iCheck\skins\square\green.css" />
+    <Content Include="iCheck\skins\square\green.png" />
+    <Content Include="iCheck\skins\square\grey%402x.png" />
+    <Content Include="iCheck\skins\square\grey.css" />
+    <Content Include="iCheck\skins\square\grey.png" />
+    <Content Include="iCheck\skins\square\orange%402x.png" />
+    <Content Include="iCheck\skins\square\orange.css" />
+    <Content Include="iCheck\skins\square\orange.png" />
+    <Content Include="iCheck\skins\square\pink%402x.png" />
+    <Content Include="iCheck\skins\square\pink.css" />
+    <Content Include="iCheck\skins\square\pink.png" />
+    <Content Include="iCheck\skins\square\purple%402x.png" />
+    <Content Include="iCheck\skins\square\purple.css" />
+    <Content Include="iCheck\skins\square\purple.png" />
+    <Content Include="iCheck\skins\square\red%402x.png" />
+    <Content Include="iCheck\skins\square\red.css" />
+    <Content Include="iCheck\skins\square\red.png" />
+    <Content Include="iCheck\skins\square\square%402x.png" />
+    <Content Include="iCheck\skins\square\square.css" />
+    <Content Include="iCheck\skins\square\square.png" />
+    <Content Include="iCheck\skins\square\yellow%402x.png" />
+    <Content Include="iCheck\skins\square\yellow.css" />
+    <Content Include="iCheck\skins\square\yellow.png" />
+    <Content Include="iCheck\skins\square\_all.css" />
+    <Content Include="iCheck\zepto.icheck.js" />
+    <Content Include="iCheck\zepto.icheck.min.js" />
+    <Content Include="Images\imagePlaceHolder.png" />
+    <Content Include="Images\js\attend.htm" />
+    <Content Include="Images\js\bondpricer.js" />
+    <Content Include="Images\js\epicapi.js" />
+    <Content Include="Images\js\lib\jquery-1.9.0-min.js" />
+    <Content Include="Images\js\lib\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Images\js\lib\jquery.ninjaui.min.js" />
+    <Content Include="Images\js\main.js" />
+    <Content Include="Images\js\vendor\bootstrap.js" />
+    <Content Include="Images\js\vendor\bootstrap.min.js" />
+    <Content Include="Images\js\vendor\html5-3.6-respond-1.1.0.min.js" />
+    <Content Include="Images\js\vendor\jquery-1.9.0.min.js" />
+    <Content Include="Images\please_wait.gif" />
+    <Content Include="Scripts\CPC\admin\AppointmentManagement\INIT.js" />
+    <Content Include="Scripts\CPC\admin\BookEnquiry\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Center\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Center\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Center\UI.js" />
+    <Content Include="Scripts\CPC\admin\HealthMaintenance\INIT.js" />
+    <Content Include="Scripts\CPC\admin\HealthMaintenance\UI.js" />
+    <Content Include="Scripts\CPC\admin\MedicationManagement\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\MedicationManagement\INIT.js" />
+    <Content Include="Scripts\CPC\admin\MedicationManagement\Temp.js" />
+    <Content Include="Scripts\CPC\admin\MedicationManagement\Temp1.js" />
+    <Content Include="Scripts\CPC\admin\MedicationManagement\UI.js" />
+    <Content Include="Scripts\CPC\admin\Patientgroups\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Patientgroups\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Patientgroups\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Patientgroups\Temp1.js" />
+    <Content Include="Scripts\CPC\admin\Patientgroups\UI.js" />
+    <Content Include="Scripts\CPC\admin\PatientServiceTickets\CronicleDiseaseManagement.js" />
+    <Content Include="Scripts\CPC\admin\PatientServiceTickets\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\PatientServiceTickets\INIT.js" />
+    <Content Include="Scripts\CPC\admin\PatientServiceTickets\UI.js" />
+    <Content Include="Scripts\CPC\admin\ReferralAppointmentManagement\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\ReferralAppointmentManagement\INIT.js" />
+    <Content Include="Scripts\CPC\admin\ReferralAppointmentManagement\Temp.js" />
+    <Content Include="Scripts\CPC\admin\ReferralAppointmentManagement\UI.js" />
+    <Content Include="Scripts\CPC\admin\Rx\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Rx\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Rx\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Rx\UI.js" />
+    <Content Include="Scripts\CPC\admin\Diseases\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Diseases\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Diseases\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Diseases\UI.js" />
+    <Content Include="Scripts\CPC\admin\ServiceTicket\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\ServiceTicket\INIT.js" />
+    <Content Include="Scripts\CPC\admin\ServiceTicket\UI.js" />
+    <Content Include="Scripts\CPC\admin\UserProfile\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\UserProfile\INIT.js" />
+    <Content Include="Scripts\CPC\admin\UserProfile\Temp.js" />
+    <Content Include="Scripts\CPC\admin\UserProfile\UI.js" />
+    <Content Include="Scripts\CPC\admin\Patient\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Patient\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Patient\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Patient\UI.js" />
+    <Content Include="Scripts\CPC\admin\Project\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Project\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Project\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Project\UI.js" />
+    <Content Include="Scripts\CPC\admin\Workgroups\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Workgroups\INIT.js" />
+    <Content Include="Scripts\CPC\admin\HealthMaintenance\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Workgroups\UI.js" />
+    <Content Include="Scripts\CPC\cpcCommon.js" />
+    <Content Include="Scripts\CPC\cpcCommonLookups.js" />
+    <Content Include="Scripts\CPC\Home\utils.js" />
+    <Content Include="Scripts\CPC\admin\Provider\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Provider\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Site\INIT.js" />
+    <Content Include="Scripts\CPC\admin\Provider\Temp.js" />
+    <Content Include="Scripts\CPC\admin\Provider\UI.js" />
+    <Content Include="Scripts\CPC\admin\Site\CRUD.js" />
+    <Content Include="Scripts\CPC\admin\Site\UI.js" />
+    <Content Include="Scripts\epicapi.js" />
+    <Content Include="Scripts\gettheme.js" />
+    <Content Include="Scripts\jqwidgets\styles\qtxTheme.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="iCheck\demo\css\custom.styl" />
+    <Content Include="iCheck\demo\css\montserrat-bold.eot" />
+    <Content Include="iCheck\demo\css\montserrat-bold.svg" />
+    <Content Include="iCheck\demo\css\montserrat-bold.ttf" />
+    <Content Include="iCheck\demo\css\montserrat-bold.woff" />
+    <Content Include="iCheck\demo\css\montserrat-regular.eot" />
+    <Content Include="iCheck\demo\css\montserrat-regular.svg" />
+    <Content Include="iCheck\demo\css\montserrat-regular.ttf" />
+    <Content Include="iCheck\demo\css\montserrat-regular.woff" />
+    <Content Include="iCheck\README.md" />
+    <Content Include="Calendar\samples\.htaccess" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\events.php" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\events_json.php" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\events_safe.php" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\types.php" />
+    <Content Include="Calendar\samples\01_initialization_loading\data\types_json.php" />
+    <Content Include="Calendar\samples\02_customization\data\combo_select.php" />
+    <Content Include="Calendar\samples\03_extensions\data\events_map_view.php" />
+    <Content Include="Calendar\samples\03_extensions\data\events_multiselect_options.php" />
+    <Content Include="Calendar\samples\03_extensions\data\events_multiselect_static.php" />
+    <Content Include="Calendar\samples\03_extensions\data\events_rec.php" />
+    <Content Include="Calendar\samples\03_extensions\data\types.php" />
+    <Content Include="Calendar\samples\04_export\data\data.ical" />
+    <Content Include="Calendar\samples\04_export\data\data.json" />
+    <Content Include="Calendar\samples\04_export\data\ical_download.php" />
+    <Content Include="Calendar\samples\04_export\data\ical_mirror.php" />
+    <Content Include="Calendar\samples\04_export\data\ical_writer.php" />
+    <Content Include="Calendar\samples\04_export\data\json_download.php" />
+    <Content Include="Calendar\samples\04_export\data\json_writer.php" />
+    <Content Include="Calendar\samples\04_export\data\xml_download.php" />
+    <Content Include="Calendar\samples\04_export\data\xml_writer.php" />
+    <Content Include="Calendar\samples\04_export\data\xml_writer_r.php" />
+    <Content Include="Calendar\samples\06_timeline\data\events_tree_db.php" />
+    <Content Include="Calendar\samples\08_shared_events\events.php" />
+    <Content Include="Calendar\samples\08_shared_events\events_shared.php" />
+    <Content Include="Calendar\samples\10_integration\data\backbone.json" />
+    <Content Include="Calendar\samples\10_integration\data\data.json" />
+    <Content Include="Calendar\samples\common\config.php" />
+    <Content Include="Calendar\samples\common\connector\base_connector.php" />
+    <Content Include="Calendar\samples\common\connector\chart_connector.php" />
+    <Content Include="Calendar\samples\common\connector\combo_connector.php" />
+    <Content Include="Calendar\samples\common\connector\convert.php" />
+    <Content Include="Calendar\samples\common\connector\crosslink_connector.php" />
+    <Content Include="Calendar\samples\common\connector\dataprocessor.php" />
+    <Content Include="Calendar\samples\common\connector\dataview_connector.php" />
+    <Content Include="Calendar\samples\common\connector\data_connector.php" />
+    <Content Include="Calendar\samples\common\connector\db_adodb.php" />
+    <Content Include="Calendar\samples\common\connector\db_common.php" />
+    <Content Include="Calendar\samples\common\connector\db_excel.php" />
+    <Content Include="Calendar\samples\common\connector\db_filesystem.php" />
+    <Content Include="Calendar\samples\common\connector\db_mssql.php" />
+    <Content Include="Calendar\samples\common\connector\db_mysqli.php" />
+    <Content Include="Calendar\samples\common\connector\db_oracle.php" />
+    <Content Include="Calendar\samples\common\connector\db_pdo.php" />
+    <Content Include="Calendar\samples\common\connector\db_phpcake.php" />
+    <Content Include="Calendar\samples\common\connector\db_phpci.php" />
+    <Content Include="Calendar\samples\common\connector\db_phpyii.php" />
+    <Content Include="Calendar\samples\common\connector\db_postgre.php" />
+    <Content Include="Calendar\samples\common\connector\db_sasql.php" />
+    <Content Include="Calendar\samples\common\connector\db_sqlite.php" />
+    <Content Include="Calendar\samples\common\connector\db_sqlite3.php" />
+    <Content Include="Calendar\samples\common\connector\db_sqlsrv.php" />
+    <Content Include="Calendar\samples\common\connector\filesystem_item.php" />
+    <Content Include="Calendar\samples\common\connector\form_connector.php" />
+    <Content Include="Calendar\samples\common\connector\grid_config.php" />
+    <Content Include="Calendar\samples\common\connector\grid_connector.php" />
+    <Content Include="Calendar\samples\common\connector\keygrid_connector.php" />
+    <Content Include="Calendar\samples\common\connector\mixed_connector.php" />
+    <Content Include="Calendar\samples\common\connector\options_connector.php" />
+    <Content Include="Calendar\samples\common\connector\scheduler_connector.php" />
+    <Content Include="Calendar\samples\common\connector\strategy.php" />
+    <Content Include="Calendar\samples\common\connector\tools.php" />
+    <Content Include="Calendar\samples\common\connector\treedatagroup_connector.php" />
+    <Content Include="Calendar\samples\common\connector\treedatamultitable_connector.php" />
+    <Content Include="Calendar\samples\common\connector\treegridgroup_connector.php" />
+    <Content Include="Calendar\samples\common\connector\treegridmultitable_connector.php" />
+    <Content Include="Calendar\samples\common\connector\treegrid_connector.php" />
+    <Content Include="Calendar\samples\common\connector\treegroup_connector.php" />
+    <Content Include="Calendar\samples\common\connector\treemultitable_connector.php" />
+    <Content Include="Calendar\samples\common\connector\tree_connector.php" />
+    <Content Include="Calendar\samples\common\connector\update.php" />
+    <Content Include="Calendar\samples\common\connector\xss_filter.php" />
+    <Content Include="Calendar\samples\common\database.sqlite" />
+    <Content Include="Calendar\samples\10_integration\data\CPC.json" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\ArrowLeft.png" />
+    <Content Include="Images\background.png" />
+    <Content Include="Images\Dashboard-Panelheader-box.png" />
+    <Content Include="Images\Dashboard-Panelheader-line.png" />
+    <Content Include="Images\Dashboard-Panelheader.png" />
+    <Content Include="Images\DoctorPhoto.jpg" />
+    <Content Include="Images\doctorphoto2.png" />
+    <Content Include="Images\graph.png" />
+    <Content Include="Images\header-divider.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\LogoSmall.png" />
+    <Content Include="Images\patients-icon.png" />
+    <Content Include="Images\patients.png" />
+    <Content Include="Images\ArrowRight.png" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.cs-CZ.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.de-DE.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.en-CA.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.en-US.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.fr-FR.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.he-IL.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.hr-HR.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.hu-HU.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.it-IT.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.ja-JP.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.lt.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.ru-RU.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.culture.sa-IN.js" />
+    <Content Include="Scripts\jqwidgets\globalization\globalize.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.cs-CZ.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.de-DE.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.en-CA.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.en-US.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.fr-FR.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.he-IL.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.hr.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.it-IT.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.ja-JP.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.ru-RU.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.glob.sa-IN.js" />
+    <Content Include="Scripts\jqwidgets\globalization\jquery.global.js" />
+    <Content Include="Scripts\jqwidgets\globalization\ReadMe.txt" />
+    <Content Include="Scripts\jqwidgets\jqx-all.js" />
+    <Content Include="Scripts\jqwidgets\jqxbuttongroup.js" />
+    <Content Include="Scripts\jqwidgets\jqxbuttons.js" />
+    <Content Include="Scripts\jqwidgets\jqxcalendar.js" />
+    <Content Include="Scripts\jqwidgets\jqxchart.js" />
+    <Content Include="Scripts\jqwidgets\jqxcheckbox.js" />
+    <Content Include="Scripts\jqwidgets\jqxcolorpicker.js" />
+    <Content Include="Scripts\jqwidgets\jqxcombobox.js" />
+    <Content Include="Scripts\jqwidgets\jqxcore.js" />
+    <Content Include="Scripts\jqwidgets\jqxdata.export.js" />
+    <Content Include="Scripts\jqwidgets\jqxdata.js" />
+    <Content Include="Scripts\jqwidgets\jqxdatetimeinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxdocking.js" />
+    <Content Include="Scripts\jqwidgets\jqxdockpanel.js" />
+    <Content Include="Scripts\jqwidgets\jqxdragdrop.js" />
+    <Content Include="Scripts\jqwidgets\jqxdropdownbutton.js" />
+    <Content Include="Scripts\jqwidgets\jqxdropdownlist.js" />
+    <Content Include="Scripts\jqwidgets\jqxexpander.js" />
+    <Content Include="Scripts\jqwidgets\jqxgauge.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.aggregates.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.columnsreorder.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.columnsresize.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.edit.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.export.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.filter.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.grouping.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.pager.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.selection.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.sort.js" />
+    <Content Include="Scripts\jqwidgets\jqxgrid.storage.js" />
+    <Content Include="Scripts\jqwidgets\jqxinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxknockout.js" />
+    <Content Include="Scripts\jqwidgets\jqxlistbox.js" />
+    <Content Include="Scripts\jqwidgets\jqxlistmenu.js" />
+    <Content Include="Scripts\jqwidgets\jqxmaskedinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxmenu.js" />
+    <Content Include="Scripts\jqwidgets\jqxnavigationbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxnumberinput.js" />
+    <Content Include="Scripts\jqwidgets\jqxpanel.js" />
+    <Content Include="Scripts\jqwidgets\jqxprogressbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxradiobutton.js" />
+    <Content Include="Scripts\jqwidgets\jqxrating.js" />
+    <Content Include="Scripts\jqwidgets\jqxscrollbar.js" />
+    <Content Include="Scripts\jqwidgets\jqxscrollview.js" />
+    <Content Include="Scripts\jqwidgets\jqxslider.js" />
+    <Content Include="Scripts\jqwidgets\jqxsplitter.js" />
+    <Content Include="Scripts\jqwidgets\jqxswitchbutton.js" />
+    <Content Include="Scripts\jqwidgets\jqxtabs.js" />
+    <Content Include="Scripts\jqwidgets\jqxtooltip.js" />
+    <Content Include="Scripts\jqwidgets\jqxtouch.js" />
+    <Content Include="Scripts\jqwidgets\jqxtree.js" />
+    <Content Include="Scripts\jqwidgets\jqxvalidator.js" />
+    <Content Include="Scripts\jqwidgets\jqxwindow.js" />
+    <Content Include="Scripts\jqwidgets\resources\drag.png" />
+    <Content Include="Scripts\jqwidgets\resources\dragcancel.png" />
+    <Content Include="Scripts\jqwidgets\resources\filter_dark.png" />
+    <Content Include="Scripts\jqwidgets\resources\filter_large_.png" />
+    <Content Include="Scripts\jqwidgets\resources\loader.gif" />
+    <Content Include="Scripts\jqwidgets\resources\loader2.gif" />
+    <Content Include="Scripts\jqwidgets\resources\loader3.gif" />
+    <Content Include="Scripts\jqwidgets\resources\loader_2.gif" />
+    <Content Include="Scripts\jqwidgets\resources\menubutton.png" />
+    <Content Include="Scripts\jqwidgets\resources\red_arrow_down.png" />
+    <Content Include="Scripts\jqwidgets\resources\red_arrow_up.png" />
+    <Content Include="Scripts\jqwidgets\resources\sortasc.png" />
+    <Content Include="Scripts\jqwidgets\resources\sortascbutton.png" />
+    <Content Include="Scripts\jqwidgets\resources\sortdesc.png" />
+    <Content Include="Scripts\jqwidgets\resources\sortdescbutton.png" />
+    <Content Include="Scripts\jqwidgets\resources\sortremove.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\arrow_bottom.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\arrow_left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\arrow_right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\arrow_top.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\backgroundTop.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\backImage.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bar-hue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bar-saturation.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_black2.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackhover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackhover_horizontal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackpressed.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blackpressed_horizontal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_black_horizontal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_blueenergy.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_darkblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_darkbluehover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\bg_darkbluepressed.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\blackbackground.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\black_gradient.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_indeterminate_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_indeterminate_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_indeterminate_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\check_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\close.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\close_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\crosshair-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\crosshair.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_a83300_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_cccccc_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkness\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\darkred_gradient.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-down-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-left-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-right-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-up-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\icon-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_a83300_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_cccccc_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\le-frog\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\lightness\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\map-hue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\map-saturation-overlay.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\map-saturation.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-down-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-left-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-right-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-up-white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\metro-icon-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\multi-arrow.gif" />
+    <Content Include="Scripts\jqwidgets\styles\images\nav-arrow-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\nav-arrow-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\nav-arrow-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\nav-arrow-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-down.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-left.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-right.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\office-icon-up.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_3383bb_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_70b2e1_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_999999_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\overcast\ui-icons_fbc856_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\pointer.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_classic.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_darkblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_shinyblack.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\rangebar_summer.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_217bc0_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_469bdd_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_6da8d5_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\redmond\ui-icons_f9bd01_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\red_gradient.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_black.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_indeterminate.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_check_white.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_classic_hover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_classic_normal.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\roundbg_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\smoothness\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\star.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_0078ae_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_056b93_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_e0fdff_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_f5e175_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_f7a50d_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\start\ui-icons_fcd113_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\star_disabled.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\star_hover.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_bd7b00_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_d19405_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_eb990f_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_ed9f26_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_fadc7a_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\sunny\ui-icons_ffe180_256x240.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\tick.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_classic.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_darkblue.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_shinyblack.png" />
+    <Content Include="Scripts\jqwidgets\styles\images\track_summer.png" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.base.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.black.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.bootstrap.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.classic.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.darkblue.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.energyblue.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.fresh.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.highcontrast.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.metro.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.office.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.shinyblack.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.summer.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-darkness.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-le-frog.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-lightness.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-overcast.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-redmond.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-smoothness.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-start.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.ui-sunny.css" />
+    <Content Include="Scripts\jqwidgets\styles\jqx.web.css" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Home\login.cshtml" />
+    <Content Include="Views\Shared\_DashboardPartial.cshtml" />
+    <Content Include="Views\Shared\_LayoutProvider.cshtml" />
+    <Content Include="Views\Shared\_LayoutPatient.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Admin\Sites.cshtml" />
+    <Content Include="Views\Admin\Providers.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\Allergens.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\BloodTransfusion.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\DescriptiveInfo.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\Disability.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\FamilyHistoryofDiseases.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\HereditaryDiseaseHistory.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\Immunization.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\LivingConditions.cshtml" />
+    <Content Include="Views\Admin\Patients.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\MedicalInfo.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\PersonalHistory.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\PersonalInfo.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\Surgery.cshtml" />
+    <Content Include="Views\Admin\subwin\Patient\Trauma.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\Centers.cshtml" />
+    <Content Include="Views\Admin\Projects.cshtml" />
+    <Content Include="Views\Admin\UserProfile.cshtml" />
+    <Content Include="Views\Admin\Diseases.cshtml" />
+    <Content Include="Views\Admin\ServiceTickets.cshtml" />
+    <Content Include="Views\Admin\Rx.cshtml" />
+    <Content Include="Views\Admin\Patientgroups.cshtml" />
+    <Content Include="Views\Admin\Workgroups.old.cshtml" />
+    <Content Include="Views\Admin\Workgroups.cshtml" />
+    <Content Include="Views\Admin\HealthMaintenance.cshtml" />
+    <Content Include="Views\Admin\PatientServiceTicket.cshtml" />
+    <Content Include="Views\Admin\MedicationManagement.cshtml" />
+    <Content Include="Views\Admin\ReferralAppointmentManagement.cshtml" />
+    <Content Include="Views\Admin\AppointmentManagement.cshtml" />
+    <Content Include="Views\Admin\BookEnquiry.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53564</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51137/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

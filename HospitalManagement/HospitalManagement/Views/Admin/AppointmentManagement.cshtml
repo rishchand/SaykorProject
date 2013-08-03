@@ -1,0 +1,378 @@
+﻿@{
+    ViewBag.Title = "AppointmentManagement";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<style type="text/css" media="screen">
+    html, body
+    {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #my_form
+    {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        z-index: 10001;
+        display: none;
+        background-color: white;
+        border: 2px outset gray;
+        padding: 20px;
+        font-family: Tahoma;
+        font-size: 10pt;
+    }
+
+        #my_form label
+        {
+            width: 200px;
+        }
+</style>
+<script src="~/iCheck/jquery.icheck.js"></script>
+<link href="~/iCheck/skins/square/grey.css" rel="stylesheet" />
+
+
+<script src="~/Calendar/codebase/dhtmlxscheduler.js"></script>
+<link href="~/Calendar/codebase/dhtmlxscheduler.css" rel="stylesheet" />
+<script src="~/Calendar/samples/common/dhtmlxDataStore/datastore.js"></script>
+
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/AppointmentManagement/INIT.js"></script>
+<script type="text/javascript" charset="utf-8">
+    window.onload = function () {
+        var data = new dhtmlXDataStore({
+            url: "../../Calendar/samples/10_integration/data/CPC.json?ww=ww",
+            scheme: {
+                $init: function (obj) {
+                    if (typeof obj.start_date == "string") {
+                        obj.start_date = scheduler.templates.xml_date(obj.start_date);
+                        obj.end_date = scheduler.templates.xml_date(obj.end_date);
+                    }
+                }
+            }
+        });
+
+        scheduler.config.xml_date = "%Y-%m-%d %H:%i";
+        scheduler.config.multi_day = true;
+        scheduler.config.max_month_events = 0;
+        scheduler.config.details_on_dblclick = true;
+        scheduler.config.details_on_create = true;
+        scheduler.init('scheduler_here', new Date(2009, 5, 1), "month");
+
+
+        scheduler.sync(data);
+        //scheduler.load("../../Calendar/samples/10_integration/data/data.json", function () {
+        //scheduler.showLightbox("1261150564");
+    }
+
+    var html = function (id) { return document.getElementById(id); }; //just a helper
+
+    scheduler.showLightbox = function (id) {
+        var ev = scheduler.getEvent(id);
+        scheduler.startLightbox(id, html("my_form"));
+
+        // Textbox
+        html("Appt_jqxIdTxt").value = ev.id || "";
+        html("Appt_jqxTextTxt").value = ev.text || "";
+        html("Appt_jqxDetailsTxt").value = ev.details || "";
+        html("Appt_jqxRefProvTxt").value = ev.referPrvdr || "";
+        html("Appt_jqxServiceProvTxt").value = ev.srvPrvdr || "";
+        html("Appt_jqxTimeTxt").value = ev.time || "";
+        html("Appt_jqxDescTxt").value = ev.descript || "";
+        html("Appt_jqxInvPplTxt").value = ev.invitePpl || "";
+        html("Appt_jqxLocTxt").value = ev.lction || "";
+        html("Appt_jqxRefReasonTxt").value = ev.referRsns || "";
+        html("Appt_jqxPatientIdTxt").value = ev.pntId || "";
+        html("Appt_jqxLastNameTxt").value = ev.lstNm || "";
+        html("Appt_jqxFirstNameTxt").value = ev.frstNm || "";
+        html("Appt_jqxFileNumberTxt").value = ev.fileNmbr || "";
+        html("Appt_jqxPhoneNumberTxt").value = ev.phNmbr || "";
+        html("Appt_jqxEmailTxt").value = ev.email || "";
+
+        // Dropdown
+        $("#Appt_jqxApptTypeDdn").jqxDropDownList('selectIndex', jQuery.inArray(ev.apptType || "", apptTypeSource));
+        $("#Appt_jqxTimePeriodDdn").jqxDropDownList('selectIndex', jQuery.inArray(ev.timePrd || "", timePeriodSource));
+        $("#Appt_jqxGenderDdn").jqxDropDownList('selectIndex', jQuery.inArray(ev.gndr || "", genderSource));
+
+        // Calendar
+        $("#Appt_jqxApptDtCal").jqxDateTimeInput('val', ev.apptDt);
+        $("#Appt_jqxStSchdCal").jqxDateTimeInput('val', ev.dtSch);
+        $("#Appt_jqxStartDtTimeCal").jqxDateTimeInput('val', ev.start_date);
+        $("#Appt_jqxEndDtTimeCal").jqxDateTimeInput('val', ev.end_date);
+
+        // Checkbox
+        $("#smsAlert_" + ev.smsAlert).iCheck('check');
+
+        html("Appt_jqxTextTxt").focus();
+    };
+
+    function save_form() {
+        var ev = scheduler.getEvent(scheduler.getState().lightbox_id);
+        ev.text = document.getElementById("Appt_jqxTextTxt").value;
+        ev.details = document.getElementById("Appt_jqxDetailsTxt").value;
+        ev.referPrvdr = document.getElementById("Appt_jqxRefProvTxt").value;
+        ev.srvPrvdr = document.getElementById("Appt_jqxServiceProvTxt").value;
+        ev.time = document.getElementById("Appt_jqxTimeTxt").value;
+        ev.descript = document.getElementById("Appt_jqxDescTxt").value;
+        ev.invitePpl = document.getElementById("Appt_jqxInvPplTxt").value;
+        ev.lction = document.getElementById("Appt_jqxLocTxt").value;
+        ev.referRsns = document.getElementById("Appt_jqxRefReasonTxt").value;
+        ev.pntId = document.getElementById("Appt_jqxPatientIdTxt").value;
+        ev.lstNm = document.getElementById("Appt_jqxLastNameTxt").value;
+        ev.frstNm = document.getElementById("Appt_jqxFirstNameTxt").value;
+        ev.fileNmbr = document.getElementById("Appt_jqxFileNumberTxt").value;
+        ev.phNmbr = document.getElementById("Appt_jqxPhoneNumberTxt").value;
+        ev.email = document.getElementById("Appt_jqxEmailTxt").value;
+
+        ev.apptType = $("#Appt_jqxApptTypeDdn").jqxDropDownList('getSelectedItem').label;
+        ev.timePrd = $("#Appt_jqxTimePeriodDdn").jqxDropDownList('getSelectedItem').label;
+        ev.gndr = $("#Appt_jqxGenderDdn").jqxDropDownList('getSelectedItem').label;
+        
+        ev.apptDt = $("#Appt_jqxApptDtCal").val();
+        ev.dtSch = $("#Appt_jqxStSchdCal").val();
+        ev.start_date = new Date($("#Appt_jqxStartDtTimeCal").val());
+        ev.end_date = new Date($("#Appt_jqxEndDtTimeCal").val());
+
+        ev.smsAlert = $("input[name='smsAlertRdo']:checked").val();
+
+
+
+
+        //ev.text = html("description").value;
+        //ev.custom1 = html("custom1").value;
+        //ev.custom2 = html("custom2").value;
+
+        scheduler.endLightbox(true, html("my_form"));
+    }
+    function close_form() {
+        scheduler.endLightbox(false, html("my_form"));
+    }
+
+    function delete_event() {
+        var event_id = scheduler.getState().lightbox_id;
+        scheduler.endLightbox(false, html("my_form"));
+        scheduler.deleteEvent(event_id);
+    }
+</script>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>Appointment Management</td>
+        </tr>
+    </table>
+</div>
+<div style="width: 100%; height: 600px">
+    <div id="my_form">
+        <div style="border: none;" id="appointmentExpander">
+            <div class="jqx-hideborder">
+                APPOINTMENT DETAILS
+            </div>
+            <div class="jqx-hideborder jqx-hidescrollbars">
+                <div style="height: 400px; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+                    <table width="100%">
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Appointment Id
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxIdTxt" /> 
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Start Date & TIme
+                            </td>
+                            <td>
+                                <div id="Appt_jqxStartDtTimeCal"></div> 
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">End Date & Time
+                            </td>
+                            <td>
+                                <div id="Appt_jqxEndDtTimeCal"></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Text
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxTextTxt" /> 
+                            </td>
+                        </tr>                        
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Details
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxDetailsTxt" /> 
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Description
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxDescTxt" /> 
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Appointment Type
+                            </td>
+                            <td>
+                                <div id="Appt_jqxApptTypeDdn"></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px;">
+                            <td class="DetailGridFieldCaption">Appointment Date
+                            </td>
+                            <td>
+                                <div id="Appt_jqxApptDtCal"></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Date Scheduled
+                            </td>
+                            <td>
+                                <div id='Appt_jqxStSchdCal'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Referring Provider
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxRefProvTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Service Provider
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxServiceProvTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Time Period
+                            </td>
+                            <td>
+                                <div id='Appt_jqxTimePeriodDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Time  
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxTimeTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Invite People
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxInvPplTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Location
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxLocTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">SMS Alert
+                            </td>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td width="33%">Yes<input id="smsAlert_yes" type="radio" name="smsAlertRdo" value="yes" checked="checked"></td>
+                                        <td width="33%">No<input id="smsAlert_no" type="radio" name="smsAlertRdo" value="no"></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Referral Reasons
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxRefReasonTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Patient Id 
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxPatientIdTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Last Name
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxLastNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">First Name
+                            </td>
+                            <td>
+                                <input type="text" id="Appt_jqxFirstNameTxt" />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Gender
+                            </td>
+                            <td>
+                                <div id='Appt_jqxGenderDdn'></div>
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">File Number
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxFileNumberTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Phone Number
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxPhoneNumberTxt' />
+                            </td>
+                        </tr>
+                        <tr style="height: 30px">
+                            <td class="DetailGridFieldCaption">Email
+                            </td>
+                            <td>
+                                <input type="text" id='Appt_jqxEmailTxt' />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <input type="button" name="save" value="Save" id="appointment_jqxButtonSave" style='width: 100px;' onclick="save_form()">
+                <input type="button" name="close" value="Close" id="appointment_jqxButtonCancel" style='width: 100px;' onclick="close_form()">
+                <input type="button" name="delete" value="Delete" id="appointment_jqxButtonDelete" style='width: 100px;' onclick="delete_event()">
+            </div>
+        </div>
+    </div>
+
+    <div id="scheduler_here" class="dhx_cal_container" style='width: 100%; height: 100%;'>
+        <div class="dhx_cal_navline">
+            <div class="dhx_cal_prev_button">&nbsp;</div>
+            <div class="dhx_cal_next_button">&nbsp;</div>
+            <div class="dhx_cal_today_button"></div>
+            <div class="dhx_cal_date"></div>
+            <div class="dhx_cal_tab" name="day_tab" style="right: 204px;"></div>
+            <div class="dhx_cal_tab" name="week_tab" style="right: 140px;"></div>
+            <div class="dhx_cal_tab" name="month_tab" style="right: 76px;"></div>
+        </div>
+        <div class="dhx_cal_header">
+        </div>
+        <div class="dhx_cal_data">
+        </div>
+    </div>
+</div>

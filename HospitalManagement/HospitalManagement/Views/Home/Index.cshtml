@@ -1,0 +1,40 @@
+﻿@{
+    Layout = null;
+    ViewBag.Title = "CPC";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/epicapi")
+
+    <script type="text/javascript">
+        var loginSessionContext;
+
+        $(document).ready(function () {
+
+            $("#classContent").load("Home/Login");
+
+        });
+
+        
+    </script>
+</head>
+<body>
+
+     <div>
+        <div id="window">              
+            <div style="overflow: hidden; clear:both; width: 100%; height: 100%" id="classContent">                 
+            </div>                
+        </div>      
+   </div>
+</body>
+</html>

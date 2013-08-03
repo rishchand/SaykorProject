@@ -1,0 +1,242 @@
+﻿@{
+    ViewBag.Title = "ReferralAppointmentManagement";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<script src="~/iCheck/jquery.icheck.js"></script>
+<link href="~/iCheck/skins/square/grey.css" rel="stylesheet" />
+@*CPC Common SCripts*@
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommon.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/cpcCommonLookups.js"></script>
+<script type="text/javascript" src="~/Scripts/epicapi.js"></script>
+
+@*Temp Script*@
+@*<script type="text/javascript" src="~/Scripts/CPC/Provider/Temp.js"></script>*@
+
+@*Screen Specific Scripts*@
+<script type="text/javascript" src="~/Scripts/CPC/Admin/ReferralAppointmentManagement/INIT.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/ReferralAppointmentManagement/UI.js"></script>
+<script type="text/javascript" src="~/Scripts/CPC/Admin/ReferralAppointmentManagement/CRUD.js"></script>
+<style>
+    .toggler
+    {
+        width: 99%;
+        height: 99%;
+    }
+
+    #button
+    {
+        padding: .5em 1em;
+        text-decoration: none;
+    }
+
+    #effect
+    {
+        position: relative;
+        width: 240px;
+        padding: 0.4em;
+        display:none;
+    }
+
+        #effect h3
+        {
+            margin: 0;
+            padding: 0.4em;
+            text-align: center;
+            font-size:12px
+        }
+</style>
+<div id="normal-header">
+    <table style="height: 40px; width: 100%">
+        <tr>
+            <td>Referral Appointment Management</td>
+            <td align="right">
+                <input type="button" value="Add New" id="RefAppt_jqxButtonAdd" onclick="AddRecord();" />
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="progressContainer" class="progressLabelHidden">
+    Please Wait...
+</div>
+<div id="mainSplitter1">
+    <div>
+        <div id='jqxWidget' style="font-size: 10px; font-family: Verdana; float: left; padding-bottom: 10px; width: 100%">
+            <div id="RefAppt_jqxgrid"></div>
+        </div>
+    </div>
+    <div>
+        <div style="height: 92%; width: 100%; border-bottom: 1px solid #aaaaaa; overflow-y: scroll">
+            <table width="100%">
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Appointment Id
+                    </td>
+                    <td>
+                        <input type="text" id="RefAppt_jqxIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Appointment Type
+                    </td>
+                    <td>
+                        <div id="RefAppt_jqxApptTypeDdn"></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px;">
+                    <td class="DetailGridFieldCaption">Appointment Date
+                    </td>
+                    <td>
+                        <div id="RefAppt_jqxApptDtCal"></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Date Scheduled
+                    </td>
+                    <td>
+                        <div id='RefAppt_jqxStSchdCal'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Referring Provider
+                    </td>
+                    <td>
+                        <input type="text" id="RefAppt_jqxRefProvTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">
+                        Service Provider<br />
+                        <a id="servProvDtlsSwitch" style="color:maroon;display:none" href="#" onClick="OffServProvDtls()">Hide Details</a>
+                    </td>
+                    <td>
+                        <div id='RefAppt_jqxServiceProvDdn'></div>
+                        <div class="toggler">
+                            <div id="effect" class="ui-widget-content ui-corner-all">
+                                <h3 class="ui-widget-header ui-corner-all">Clinic Hours</h3>
+                                <p id="clinicHours">
+                                </p>
+                                <h3 class="ui-widget-header ui-corner-all">Outpatient Condition</h3>
+                                <p id="outpatientCondition">
+                                </p>
+                                <h3 class="ui-widget-header ui-corner-all">Outpatient Visit</h3>
+                                <p id="outpatientVisit">
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Time Period
+                    </td>
+                    <td>
+                        <div id='RefAppt_jqxTimePeriodDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Time  
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxTimeTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Description
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxDescTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Invite People
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxInvPplTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Location
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxLocTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">SMS Alert
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td width="33%">Yes<input id="smsAlert_yes" type="radio" name="smsAlertRdo" value="yes" checked="checked"></td>
+                                <td width="33%">No<input id="smsAlert_no" type="radio" name="smsAlertRdo" value="no"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Referral Reasons
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxRefReasonTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Patient Id 
+                    </td>
+                    <td>
+                        <input type="text" id="RefAppt_jqxPatientIdTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Last Name
+                    </td>
+                    <td>
+                        <input type="text" id="RefAppt_jqxLastNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">First Name
+                    </td>
+                    <td>
+                        <input type="text" id="RefAppt_jqxFirstNameTxt" />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Gender
+                    </td>
+                    <td>
+                        <div id='RefAppt_jqxGenderDdn'></div>
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">File Number
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxFileNumberTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Phone Number
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxPhoneNumberTxt' />
+                    </td>
+                </tr>
+                <tr style="height: 30px">
+                    <td class="DetailGridFieldCaption">Email
+                    </td>
+                    <td>
+                        <input type="text" id='RefAppt_jqxEmailTxt' />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                    <input type="button" value="Delete" id="RefAppt_jqxButtonDelete" onclick="deleteButtonClick()" />
+                    <input type="button" value="Save" id="RefAppt_jqxButtonSave" onclick="saveButtonClick()" />
+                    <input type="button" value="Cancel" id="RefAppt_jqxButtonCancel" onclick="CancelRowEdit();" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
